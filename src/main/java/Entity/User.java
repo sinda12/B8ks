@@ -11,6 +11,8 @@ public class User  {
     private List<Order> orders = new ArrayList<Order>();
     private List<Blog> blogs = new ArrayList<Blog>() ;
     private List<UsedBook> usedBooks = new ArrayList<UsedBook>() ;
+    private List<Claim> claims = new ArrayList<Claim>() ;
+    private List<NewsLetter> newsLetters = new ArrayList<NewsLetter>() ;
 
     public User() {
     }

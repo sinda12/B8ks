@@ -9,8 +9,8 @@
         <module name="B8ks" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="B8ks" target="15" />
+    <bytecodeTargetLevel target="8">
+      <module name="B8ks" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

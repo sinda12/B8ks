@@ -1,4 +1,4 @@
-package Entity;
+package entities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,19 @@ public class User  {
     public User() {
     }
 
-    public User(int id, int mobile, int age, String nom, String prenom, String adresse, String email, String password, Boolean isAdmin, List<Order> orders, List<Blog> blogs, List<UsedBook> usedBooks) {
+    public User(int mobile, int age, String nom, String prenom, String adresse, String email, String password, Boolean isAdmin) {
+
+        this.mobile = mobile;
+        this.age = age;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.adresse = adresse;
+        this.email = email;
+        this.password = password;
+        this.isAdmin = isAdmin;
+    }
+
+    public User(int id, int mobile, int age, String nom, String prenom, String adresse, String email, String password, Boolean isAdmin) {
         this.id = id;
         this.mobile = mobile;
         this.age = age;
@@ -27,9 +39,6 @@ public class User  {
         this.email = email;
         this.password = password;
         this.isAdmin = isAdmin;
-        this.orders = orders;
-        this.blogs = blogs;
-        this.usedBooks = usedBooks;
     }
 
     public int getId() {
@@ -133,18 +142,10 @@ public class User  {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return id == user.id &&
-                mobile == user.mobile &&
-                age == user.age &&
-                Objects.equals(nom, user.nom) &&
-                Objects.equals(prenom, user.prenom) &&
-                Objects.equals(adresse, user.adresse) &&
-                Objects.equals(email, user.email) &&
-                Objects.equals(password, user.password) &&
-                Objects.equals(isAdmin, user.isAdmin) &&
-                Objects.equals(orders, user.orders) &&
-                Objects.equals(blogs, user.blogs) &&
-                Objects.equals(usedBooks, user.usedBooks);
+        return
+
+                Objects.equals(email, user.email);
+
     }
 
     @Override

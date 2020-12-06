@@ -4,6 +4,7 @@ package service;
 import entities.User;
 import utils.DataSource;
 
+import javax.jws.soap.SOAPBinding;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,9 +18,9 @@ public class ServiceUser implements Iservice<User>  {
 Connection cnx = DataSource.getInstance().getCnx();
 
     @Override
-    public void add(User p) {
+    public void adduser(User p) {
         try {
-            PreparedStatement st = cnx.prepareStatement("INSERT into USER (mobile, age, nom, prenom, adresse, email, password, isAdmin) values (?,?,?,?,?,?,?,?)");
+            PreparedStatement st = cnx.prepareStatement("INSERT into USER (mobile, age, nom, prenom, adresse, email, password) values (?,?,?,?,?,?,?)");
             st.setInt(1,p.getMobile());
             st.setInt(2,p.getAge());
             st.setString(3,p.getNom());
@@ -27,11 +28,11 @@ Connection cnx = DataSource.getInstance().getCnx();
             st.setString(5,p.getAdresse());
             st.setString(6,p.getEmail());
             st.setString(7,p.getPassword());
-            st.setBoolean(8,p.getAdmin());
             st.executeUpdate();
             System.out.println("ajout reussi !!!");
 
         } catch (SQLException e) {
+            System.out.println("lekhraaaa");
             e.printStackTrace();
         }
 
@@ -75,7 +76,7 @@ e.printStackTrace();
     public User modify(User p) {
         try {
             PreparedStatement st = cnx.prepareStatement("update USER set mobile=?,age=?,nom=?,prenom=?,adresse=?," +
-                    "email=?,password=?,isAdmin=? where id=?");
+                    "email=?,password=? where id=?");
             st.setInt(1,p.getMobile());
             st.setInt(2,p.getAge());
             st.setString(3,p.getNom());
@@ -83,8 +84,7 @@ e.printStackTrace();
             st.setString(5,p.getAdresse());
             st.setString(6,p.getEmail());
             st.setString(7,p.getPassword());
-            st.setBoolean(8,p.getAdmin());
-            st.setInt(9,p.getId());
+            st.setInt(8,p.getId());
             System.out.println("modification reussite !!!!!");
             st.executeUpdate();
         } catch (SQLException e) {
@@ -92,5 +92,48 @@ e.printStackTrace();
         }
 
         return p;
+    }
+
+    @Override
+    public User findById(int p) {
+        User s = null ;
+        try {
+            PreparedStatement st = cnx.prepareStatement("select t.* from user t where id=?");
+            st.setInt(1,p);
+            ResultSet rs = st.executeQuery();
+            if(rs.next()){
+             s = new User(rs.getInt(2),rs.getInt(3),rs.getString(4),
+                    rs.getString(5),rs.getString(6),rs.getString(7),
+                    rs.getString(8),rs.getBoolean(9));}
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return s;
+    }
+
+
+    public User login(String email,String password)
+    {
+        User user = null ;
+        try {
+            PreparedStatement st = cnx.prepareStatement("select * from user where email=? and password=?");
+            st.setString(1,email);
+            st.setString(2,password);
+
+            ResultSet rs =st.executeQuery();
+            if (rs.next()){
+              user = new User(rs.getInt(1),rs.getInt(2),rs.getInt(3),rs.getString(4),
+                    rs.getString(5),rs.getString(6),rs.getString(7),
+                    rs.getString(8));}
+
+
+        }
+        catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+       return user ;
     }
 }

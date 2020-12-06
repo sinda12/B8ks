@@ -17,6 +17,16 @@ public class User  {
     public User() {
     }
 
+    public User(int mobile, int age, String nom, String prenom, String adresse, String email, String password) {
+        this.mobile = mobile;
+        this.age = age;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.adresse = adresse;
+        this.email = email;
+        this.password = password;
+    }
+
     public User(int mobile, int age, String nom, String prenom, String adresse, String email, String password, Boolean isAdmin) {
 
         this.mobile = mobile;
@@ -29,7 +39,7 @@ public class User  {
         this.isAdmin = isAdmin;
     }
 
-    public User(int id, int mobile, int age, String nom, String prenom, String adresse, String email, String password, Boolean isAdmin) {
+    public User(int id, int mobile, int age, String nom, String prenom, String adresse, String email, String password) {
         this.id = id;
         this.mobile = mobile;
         this.age = age;

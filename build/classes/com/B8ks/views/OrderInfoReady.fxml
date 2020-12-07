@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="667.0" prefWidth="887.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.B8ks.views.OrderInfoReadyController">
+   <children>
+      <AnchorPane prefHeight="667.0" prefWidth="887.0">
+         <children>
+            <AnchorPane layoutY="30.0" prefHeight="66.0" prefWidth="893.0">
+               <children>
+                  <Label layoutX="81.0" layoutY="24.0" prefHeight="18.0" prefWidth="133.0" text="LIVRAISON" />
+                  <Label layoutX="419.0" layoutY="24.0" text="PAIEMENT" />
+                  <Label layoutX="732.0" layoutY="24.0" text="RESUME" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="756.0" layoutY="111.0" mnemonicParsing="false" text="CHANGER_adresse" />
+            <Label layoutX="67.0" layoutY="115.0" text="DETAILS DE L'ADRESSE" />
+            <Label fx:id="affiche_adresse_livraison" layoutX="65.0" layoutY="143.0" prefHeight="66.0" prefWidth="726.0" text="affiche_adresse" />
+            <Label layoutX="65.0" layoutY="243.0" text="SELECTIONNEZ UNE METHODE DE LIVRAISON" />
+            <AnchorPane fx:id="affiche_info_livraison" layoutY="252.0" prefHeight="146.0" prefWidth="895.0">
+               <children>
+                  <Label layoutX="67.0" layoutY="45.0" opacity="0.63" text="entre 3 jours et 6 jours">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="100.0" opacity="0.63" text="entre 1 jours et 3 jours">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="40.0" layoutY="27.0" mnemonicParsing="false" text="Livraison standard" />
+                  <RadioButton layoutX="40.0" layoutY="82.0" mnemonicParsing="false" text="Livraison rapide" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="380.0" layoutY="425.0" prefHeight="215.0" prefWidth="514.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="130.0" mnemonicParsing="false" text="Proceder_au_Paiement" />
+                  <Label layoutX="28.0" layoutY="36.0" text="Sous-total" />
+                  <Label layoutX="28.0" layoutY="54.0" text="Frais de livraison" />
+                  <Label layoutX="28.0" layoutY="96.0" text="Total" />
+                  <Line endX="330.4000244140625" layoutX="141.0" layoutY="85.0" startX="-100.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

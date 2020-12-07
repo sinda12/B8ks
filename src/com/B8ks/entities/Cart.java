@@ -3,11 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Entity;
+package com.B8ks.entities;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+
 
 /**
  *
@@ -17,20 +15,22 @@ public class Cart {
     private int cart_id;
     private int user_id;
     private int quantity;
-    private List<Book> books = new ArrayList<Book>() ;
+    private int book_id;
 
     public Cart() {
     }
 
-    public Cart(int user_id, int quantity) {
+    public Cart(int user_id, int quantity, int book_id) {
         this.user_id = user_id;
         this.quantity = quantity;
+        this.book_id = book_id;
     }
 
-    public Cart(int cart_id, int user_id, int quantity) {
+    public Cart(int cart_id, int user_id, int quantity, int book_id) {
         this.cart_id = cart_id;
         this.user_id = user_id;
         this.quantity = quantity;
+        this.book_id = book_id;
     }
 
     public int getCart_id() {
@@ -57,17 +57,21 @@ public class Cart {
         this.quantity = quantity;
     }
 
-    public List<Book> getBooks() {
-        return books;
+    public int getBook_id() {
+        return book_id;
     }
 
-    public void setBooks(List<Book> books) {
-        this.books = books;
+    public void setBook_id(int book_id) {
+        this.book_id = book_id;
     }
 
     @Override
     public int hashCode() {
-        int hash = 7;
+        int hash = 5;
+        hash = 29 * hash + this.cart_id;
+        hash = 29 * hash + this.user_id;
+        hash = 29 * hash + this.quantity;
+        hash = 29 * hash + this.book_id;
         return hash;
     }
 
@@ -86,16 +90,22 @@ public class Cart {
         if (this.cart_id != other.cart_id) {
             return false;
         }
-        return this.user_id == other.user_id;
+        if (this.user_id != other.user_id) {
+            return false;
+        }
+        if (this.quantity != other.quantity) {
+            return false;
+        }
+        if (this.book_id != other.book_id) {
+            return false;
+        }
+        return true;
     }
-
-
 
     @Override
     public String toString() {
-        return "Cart{" + "Cart_id=" + cart_id + ", user_id=" + user_id + ", quantity=" + quantity + ", books=" + books + '}';
+        return "Cart{" + "cart_id=" + cart_id + ", user_id=" + user_id + ", quantity=" + quantity + ", book_id=" + book_id + '}';
     }
-    
 
    
     

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-radius: 1em;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.B8ks.views.OrderAfficheAdminController">
+   <children>
+      <AnchorPane layoutX="-8.0" prefHeight="636.0" prefWidth="856.0" style="-fx-background-color: FFFDC6; -fx-background-radius: 1em;">
+         <children>
+            <TableView fx:id="table" layoutX="366.0" layoutY="203.0" prefHeight="326.0" prefWidth="377.0" style="-fx-background-color: FFCA48; -fx-border-radius: 8em;">
+               <columns>
+                  <TableColumn fx:id="order_id" prefWidth="75.0" style="-fx-background-radius: 2em;" text="order_id" />
+                  <TableColumn fx:id="cart_id" prefWidth="75.0" style="-fx-background-radius: 2em;" text="cart_id" />
+                  <TableColumn fx:id="user_id" prefWidth="75.0" style="-fx-background-radius: 2em;" text="user_id" />
+                  <TableColumn fx:id="status" prefWidth="75.0" style="-fx-background-radius: 2em;" text="status" />
+                  <TableColumn fx:id="totalPrice" prefWidth="75.0" style="-fx-background-radius: 2em;" text="totalPrice" />
+               </columns>
+            </TableView>
+            <TextField fx:id="find_by_ID" layoutX="440.0" layoutY="135.0" prefHeight="26.0" prefWidth="205.0" style="-fx-background-radius: 4em;" />
+            <Label layoutX="209.0" layoutY="139.0" text="chercher une commande par ID">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="button_find_byID" layoutX="686.0" layoutY="136.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: orange; -fx-background-radius: 2em;" text="chercher" />
+            <Label layoutX="15.0" layoutY="430.0" text="TotalPrice">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="376.0" text="Status">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="318.0" text="User id">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="264.0" text="Cart id">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="213.0" text="Order id">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="order" layoutX="74.0" layoutY="211.0" style="-fx-background-radius: 2em;" />
+            <TextField fx:id="tprice" layoutX="74.0" layoutY="426.0" style="-fx-background-radius: 2em;" />
+            <TextField fx:id="stat" layoutX="74.0" layoutY="372.0" style="-fx-background-radius: 2em;" />
+            <TextField fx:id="user" layoutX="74.0" layoutY="314.0" style="-fx-background-radius: 2em;" />
+            <TextField fx:id="cart" layoutX="74.0" layoutY="260.0" style="-fx-background-radius: 2em;" />
+            <Button layoutX="39.0" layoutY="504.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: orange; -fx-background-radius: 2em;" text="Modifier" />
+            <Button fx:id="supprimer" layoutX="138.0" layoutY="504.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: orange; -fx-background-radius: 2em;" text="Supprimer" />
+            <Label layoutX="47.0" layoutY="40.0" style="-fx-font: Orange;" text="ADMIN view" textFill="#3b9a85">
+               <font>
+                  <Font name="Bodoni MT Black" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="Actualiser" layoutX="758.0" layoutY="27.0" mnemonicParsing="false" onAction="#actualiser" style="-fx-background-color: #8FF368; -fx-background-radius: 2em;" text="Actualiser" />
+            <Button fx:id="Clear" layoutX="658.0" layoutY="27.0" mnemonicParsing="false" onAction="#Clear" style="-fx-background-color: #8FF368; -fx-background-radius: 2em;" text="Clear" />
+            <Label layoutX="100.0" layoutY="237.0" opacity="0.69" text="you can ignore this item">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Button fx:id="add" layoutX="261.0" layoutY="504.0" mnemonicParsing="false" onAction="#add_meth" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: orange; -fx-background-radius: 2em;" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

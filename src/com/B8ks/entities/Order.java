@@ -1,42 +1,36 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Entity;
+package com.B8ks.entities;
 
-/**
- *
- * @author sinda
- */
 public class Order {
     private int order_id;
     private int cart_id;
-    private int user_id;
+    private User user;
     private String status;
     private float totalPrice;
 
     public Order() {
     }
 
-    public Order(int cart_id, int user_id, String status) {
+    public Order(int cart_id, User user, String status, float totalPrice) {
         this.cart_id = cart_id;
-        this.user_id = user_id;
-        this.status = status;
-    }
-
-    public Order(int cart_id, int user_id, String status, float totalPrice) {
-        this.cart_id = cart_id;
-        this.user_id = user_id;
+        this.user = user;
         this.status = status;
         this.totalPrice = totalPrice;
     }
+
+ 
     
 
-    public Order(int order_id,  int cart_id,int user_id, String status, float totalPrice) {
+    public Order(int cart_id, User user, String status) {
+        this.cart_id = cart_id;
+        this.user = user;
+        this.status = status;
+    }
+
+    
+    public Order(int order_id,  int cart_id,User user, String status, float totalPrice) {
         this.order_id = order_id;
         this.cart_id = cart_id;
-        this.user_id = user_id;
+        this.user = user;
         this.status = status;
         this.totalPrice = totalPrice;
     }
@@ -49,13 +43,14 @@ public class Order {
         this.order_id = order_id;
     }
 
-    public int getUser_id() {
-        return user_id;
+    public User getUser() {
+        return user;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUser(User user) {
+        this.user = user;
     }
+
 
     public int getCart_id() {
         return cart_id;
@@ -110,8 +105,10 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" + "order_id=" + order_id + ", cart_id=" + cart_id + ", user_id=" + user_id + ", status=" + status + ", totalPrice=" + totalPrice + '}';
+        return "Order{" + "order_id=" + order_id + ", cart_id=" + cart_id + ", user=" + user + ", status=" + status + ", totalPrice=" + totalPrice + '}';
     }
+
+
 
 
 

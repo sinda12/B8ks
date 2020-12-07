@@ -5,9 +5,8 @@
  */
 package com.B8ks.service;
 
+import com.B8ks.entities.Cart;
 import com.B8ks.utils.DataSource;
-import Entity.Cart;
-import Entity.Order;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
 import java.sql.PreparedStatement;
@@ -30,6 +29,7 @@ public class CartService {
          try {
               String req="INSERT INTO cart (user_id,quantity) values(?,?)";
             PreparedStatement pst = cnx.prepareStatement(req);
+            //c.getUser.getUser_id(
             pst.setInt(1, c.getUser_id());
             pst.setInt(2, c.getQuantity());
             pst.executeUpdate();

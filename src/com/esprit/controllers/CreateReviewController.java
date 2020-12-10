@@ -19,6 +19,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
@@ -54,8 +55,17 @@ public class CreateReviewController extends BaseController {
 
     @FXML
     private void send(ActionEvent event) {
-        u.setId(21);
+        if (description.getText().trim().length() > 0){
+               u.setId(21);
         sr.create(new Review(description.getText(), (int) choicebox.getValue()),u);
+        }else{
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("TextField is empty !!");
+            alert.setHeaderText(null);
+            alert.setContentText("Please Write Something !!");
+            alert.showAndWait();
+             }
+        
     }
     
 }

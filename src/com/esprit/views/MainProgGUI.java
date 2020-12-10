@@ -24,7 +24,7 @@ public class MainProgGUI extends Application {
  
         try{
             ViewFactory viewFactory = new ViewFactory();
-            viewFactory.SendEmail();
+            viewFactory.showClaim();
                  
         }catch(Exception e){
             e.printStackTrace();

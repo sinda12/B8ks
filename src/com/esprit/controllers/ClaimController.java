@@ -17,6 +17,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import com.esprit.controllers.BaseController;
 import com.esprit.views.ViewFactory;
+import javafx.scene.control.Alert;
 
 /**
  * FXML Controller class
@@ -42,8 +43,16 @@ public class ClaimController extends BaseController {
 
     @FXML
     private void send(ActionEvent event) {
-        u.setId(21);
+        if (description.getText().trim().length() > 0){
+               u.setId(21);
         sc.create(new Claim(description.getText()),u);
+        }else{
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("TextField is empty !!");
+            alert.setHeaderText(null);
+            alert.setContentText("Please Write Something !!");
+            alert.showAndWait();
+             }
     }
     
 }

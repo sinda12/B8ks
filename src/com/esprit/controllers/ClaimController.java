@@ -1,0 +1,49 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.esprit.Controllers;
+
+import com.esprit.models.Claim;
+import com.esprit.models.User;
+import com.esprit.services.ServiceClaim;
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import com.esprit.controllers.BaseController;
+import com.esprit.views.ViewFactory;
+
+/**
+ * FXML Controller class
+ *
+ * @author Lenovo
+ */
+public class ClaimController extends BaseController {
+
+    @FXML
+    private TextField description;
+    @FXML
+    private Button sendidbtn;
+
+            ServiceClaim sc = new ServiceClaim();
+            User u = new User();
+
+    public ClaimController(ViewFactory v, String fxmlName) {
+        super(v, fxmlName);
+    }
+    /**
+     * Initializes the controller class.
+     */
+
+    @FXML
+    private void send(ActionEvent event) {
+        u.setId(21);
+        sc.create(new Claim(description.getText()),u);
+    }
+    
+}

@@ -40,6 +40,8 @@ public class ShowClaimsController extends BaseController implements Initializabl
     private Button btn_delete;
     @FXML
     private Button btn_update;
+@FXML
+    private Button btn_refresh;
     
     
     
@@ -92,6 +94,11 @@ public class ShowClaimsController extends BaseController implements Initializabl
         UpdateClaimController uc = vf.fxmlLoader.getController();
         uc.setDescription(table.getSelectionModel().getSelectedItem().getDescription());
         uc.setId_claim(table.getSelectionModel().getSelectedItem().getId());
+        UpdateTable();
+    }
+@FXML
+    private void refresh(ActionEvent event) {
+        UpdateTable();
     }
     
 }

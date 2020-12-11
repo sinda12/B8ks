@@ -45,6 +45,8 @@ public class ShowReviewsController extends BaseController implements Initializab
     private Button btn_delete;
     @FXML
     private Button btn_refresh;
+ @FXML
+    private Button btn_update;
     
     ViewFactory vf = new ViewFactory();
 
@@ -97,11 +99,16 @@ public class ShowReviewsController extends BaseController implements Initializab
 
     @FXML
     private void refresh(ActionEvent event) {
+UpdateTable();
+    }
+   @FXML
+    private void update(ActionEvent event) {
                 vf.ShowUpdatReview();
         UpdateReviewController ur = vf.fxmlLoader.getController();
         ur.setDescription(table.getSelectionModel().getSelectedItem().getReview());
         ur.setChoicebox(table.getSelectionModel().getSelectedItem().getRate());
         ur.setId_review(table.getSelectionModel().getSelectedItem().getId());
+        UpdateTable();
     }
     
 }

@@ -6,10 +6,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="237.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="237.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TextField fx:id="description" layoutX="137.0" layoutY="59.0" prefHeight="60.0" prefWidth="288.0" promptText="Update your review here !" />
-      <Button fx:id="sendbtn" layoutX="382.0" layoutY="143.0" mnemonicParsing="false" onAction="#send" text="Send" />
+      <Button fx:id="sendbtn" layoutX="382.0" layoutY="143.0" mnemonicParsing="false" onAction="#send" style="-fx-background-color: #49b86b;" text="Send" />
       <ChoiceBox fx:id="choicebox" layoutX="137.0" layoutY="143.0" prefWidth="150.0" />
       <Label fx:id="lb_comment" layoutX="50.0" layoutY="81.0" text="Comment :" />
       <Label fx:id="lb_rate" layoutX="50.0" layoutY="147.0" text="Rate :" />

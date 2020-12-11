@@ -62,6 +62,7 @@ public class UpdateClaimController extends BaseController implements Initializab
             alert.setHeaderText(null);
             alert.setContentText("Claim updated successfully !!");
             alert.showAndWait();
+            
     }
     
 }

@@ -2,7 +2,9 @@ package service;
 
 
 import entities.User;
+import org.mindrot.jbcrypt.BCrypt;
 import utils.DataSource;
+import utils.Tools;
 
 import javax.jws.soap.SOAPBinding;
 import java.sql.Connection;
@@ -18,21 +20,21 @@ public class ServiceUser implements Iservice<User>  {
 Connection cnx = DataSource.getInstance().getCnx();
 
     @Override
-    public void adduser(User p) {
+    public void addUser(User p) {
         try {
-            PreparedStatement st = cnx.prepareStatement("INSERT into USER (mobile, age, nom, prenom, adresse, email, password) values (?,?,?,?,?,?,?)");
+            PreparedStatement st = cnx.prepareStatement("INSERT into USER (mobile, age, nom, prenom, adresse, email, password,isAdmin) values (?,?,?,?,?,?,?,?)");
             st.setInt(1,p.getMobile());
             st.setInt(2,p.getAge());
             st.setString(3,p.getNom());
             st.setString(4,p.getPrenom());
             st.setString(5,p.getAdresse());
             st.setString(6,p.getEmail());
-            st.setString(7,p.getPassword());
+            st.setString(7, BCrypt.hashpw(p.getPassword(),Tools.BCRYPT_SALT));
+            st.setBoolean(8,true);
             st.executeUpdate();
             System.out.println("ajout reussi !!!");
 
         } catch (SQLException e) {
-            System.out.println("lekhraaaa");
             e.printStackTrace();
         }
 
@@ -46,7 +48,7 @@ Connection cnx = DataSource.getInstance().getCnx();
             ResultSet rs = st.executeQuery();
             while (rs.next())
             {
-                l.add(new User(rs.getInt(2),rs.getInt(3),rs.getString(4),
+                l.add(new User(rs.getInt(1),rs.getInt(2),rs.getInt(3),rs.getString(4),
                         rs.getString(5),rs.getString(6),rs.getString(7),
                         rs.getString(8),rs.getBoolean(9)));
             }
@@ -58,11 +60,11 @@ e.printStackTrace();
     }
 
     @Override
-    public void delete(User p) {
+    public void delete(int id) {
 
         try {
             PreparedStatement st = cnx.prepareStatement("DELETE from user where id =?");
-            st.setInt(1,p.getId());
+            st.setInt(1,id);
             st.executeUpdate();
             System.out.println("supression reussite !!!!!");
 
@@ -113,6 +115,24 @@ e.printStackTrace();
         return s;
     }
 
+    public int validateEmail (String email)
+    {
+        int count =0;
+        try {
+            PreparedStatement st = cnx.prepareStatement("select * from user where email=?");
+            st.setString(1,email);
+            ResultSet rs =st.executeQuery();
+            if (rs.next()){
+                count++;
+        }}
+        catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+        return count ;
+    }
+
+
 
     public User login(String email,String password)
     {
@@ -120,13 +140,13 @@ e.printStackTrace();
         try {
             PreparedStatement st = cnx.prepareStatement("select * from user where email=? and password=?");
             st.setString(1,email);
-            st.setString(2,password);
+            st.setString(2,BCrypt.hashpw(password, Tools.BCRYPT_SALT));
 
             ResultSet rs =st.executeQuery();
             if (rs.next()){
               user = new User(rs.getInt(1),rs.getInt(2),rs.getInt(3),rs.getString(4),
                     rs.getString(5),rs.getString(6),rs.getString(7),
-                    rs.getString(8));}
+                    rs.getString(8),rs.getBoolean(9));}
 
 
         }

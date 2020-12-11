@@ -1,12 +1,10 @@
 package views;
 
-import controller.BaseController;
-import controller.LoginController;
-import controller.MenuController;
-import controller.SignInController;
+import controller.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -62,8 +60,30 @@ public void showMenu()
     initializeStage(b);
 }
 
+public void showListUser()
+    {
+        BaseController b = new UsersController(this,"list_users.fxml");
+        initializeStage(b);
+    }
+
 public void closeStage(Stage stageToClose) {
         stageToClose.close();
         activeStage.remove(stageToClose);
     }
+
+    public void showAlertWithHeaderText(String msg) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("login try");
+        alert.setHeaderText("Results:");
+        alert.setContentText(msg);
+
+        alert.showAndWait();
+    }
+
+ /*   public void showVerifMail()
+    {
+
+        BaseController b = new VerificationController(this,"verification.fxml");
+        initializeStage(b);
+    }*/
 }

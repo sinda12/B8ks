@@ -39,7 +39,7 @@ public class User  {
         this.isAdmin = isAdmin;
     }
 
-    public User(int id, int mobile, int age, String nom, String prenom, String adresse, String email, String password) {
+    public User(int id, int mobile, int age, String nom, String prenom, String adresse, String email, String password, Boolean isAdmin) {
         this.id = id;
         this.mobile = mobile;
         this.age = age;

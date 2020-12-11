@@ -5,8 +5,8 @@
  */
 package com.esprit.views;
 
-import com.esprit.models.Book;
-import com.esprit.models.Category;
+
+import com.B8ks.entities.Book;
 import com.esprit.services.ServicesBook;
 import java.io.IOException;
 import java.net.URL;

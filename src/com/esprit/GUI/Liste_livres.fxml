@@ -4,6 +4,8 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
@@ -36,6 +38,11 @@
          </fill>
       </Text>
       <TextField fx:id="search" layoutX="374.0" layoutY="78.0" onKeyTyped="#searchBox" prefHeight="31.0" prefWidth="365.0" promptText="Search by title, publisher or category" style="-fx-background-radius: 100px; -fx-border-color: #007782; -fx-border-radius: 100px; -fx-background-color: transparent;" />
+      <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="706.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../B8ks/photos/icons8_Search_52px.png" />
+         </image>
+      </ImageView>
    </children>
    <effect>
       <DropShadow />

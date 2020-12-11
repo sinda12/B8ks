@@ -51,7 +51,7 @@ public class Order3_ResumeController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        affiche_adresse.setText(so.UserDetails(u_i));
+        //affiche_adresse.setText(so.UserDetails(u_i));
     }    
 
     @FXML

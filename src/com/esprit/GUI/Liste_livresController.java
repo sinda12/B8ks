@@ -7,6 +7,7 @@ package com.esprit.GUI;
 
 import com.B8ks.entities.Book;
 import com.B8ks.entities.Category;
+import com.B8ks.service.CartService;
 import com.esprit.services.ServicesBook;
 import java.io.IOException;
 import java.net.URL;
@@ -18,6 +19,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -39,7 +41,7 @@ import javafx.stage.Stage;
  * @author gar4a
  */
 public class Liste_livresController implements Initializable {
-
+int user_id=3;
     @FXML
     private TableView<Book> TabBook;
     @FXML
@@ -134,5 +136,7 @@ public class Liste_livresController implements Initializable {
         TabBook.setItems(sortedData);
     
     }
+
+
     }
  

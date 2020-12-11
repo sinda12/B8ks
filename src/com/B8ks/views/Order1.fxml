@@ -13,9 +13,12 @@
    <children>
       <AnchorPane layoutX="15.0" prefHeight="551.0" prefWidth="766.0">
          <children>
-            <Label layoutX="67.0" layoutY="115.0" text="DETAILS DE L'ADRESSE" textFill="WHITE" />
-            <Label fx:id="affiche_adresse_livraison" layoutX="65.0" layoutY="143.0" prefHeight="66.0" prefWidth="379.0" text="affiche_adresse" />
-            <Label layoutX="65.0" layoutY="243.0" text="SELECTIONNEZ UNE METHODE DE LIVRAISON" textFill="WHITE">
+            <Label layoutX="67.0" layoutY="115.0" text="YOUR DETAILS :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="affiche_adresse_livraison" layoutX="65.0" layoutY="143.0" prefHeight="66.0" prefWidth="379.0" text="affiche_adresse" textFill="#436f74" />
+            <Label layoutX="65.0" layoutY="243.0" text="CHOOSE A DELIVERY METHODE :" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
@@ -67,9 +70,21 @@
                      </font>
                   </Label>
                   <Line endX="330.4000244140625" layoutX="141.0" layoutY="85.0" startX="-100.0" stroke="#4ce7ff" />
-                  <Label fx:id="sous_total" layoutX="436.0" layoutY="36.0" text="ST" />
-                  <Label fx:id="frais_livrison" layoutX="436.0" layoutY="54.0" text="FL" />
-                  <Label fx:id="total" layoutX="432.0" layoutY="96.0" text="Total" />
+                  <Label fx:id="sous_total" layoutX="436.0" layoutY="36.0" text="ST" textFill="#6fa292">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="frais_livrison" layoutX="436.0" layoutY="54.0" text="FL" textFill="#6fa292">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="total" layoutX="432.0" layoutY="96.0" text="Total" textFill="#6fa292">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
                   <Button fx:id="paiement" layoutX="44.0" layoutY="133.0" mnemonicParsing="false" onAction="#GoToPayment" style="-fx-background-color: transparent; -fx-border-radius: 100px; -fx-border-color: #007782;" text="proceder au paiement" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="12.0" />

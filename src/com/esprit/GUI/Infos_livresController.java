@@ -6,6 +6,7 @@
 package com.esprit.GUI;
 
 import com.B8ks.entities.Book;
+import com.B8ks.service.CartService;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -26,7 +27,7 @@ import javafx.stage.Stage;
  * @author gar4a
  */
 public class Infos_livresController implements Initializable {
-
+int user_id=3;
     @FXML
     private Label txttitre;
     @FXML
@@ -48,6 +49,8 @@ public class Infos_livresController implements Initializable {
     private ImageView imglivre;
     @FXML
     private AnchorPane GetInfos;
+    @FXML
+    private Label book_i;
     /**
      * Initializes the controller class.
      */
@@ -56,7 +59,8 @@ public class Infos_livresController implements Initializable {
         GetInfos.setOnMouseEntered(e->{
             setInput();
         });
-    }    
+    } 
+    
     public void setB(Book b) {
         this.b = b;
     }
@@ -68,6 +72,7 @@ public class Infos_livresController implements Initializable {
         txtdesc.setText(b.getDescr());
         txttype.setText((b.getCat()));
         imglivre.setImage(new Image(b.getImg()));
+        book_i.setText(String.valueOf(b.getId()));
 
             }
     @FXML
@@ -75,5 +80,12 @@ public class Infos_livresController implements Initializable {
         Stage stage = (Stage) Annuler.getScene().getWindow();
         stage.close();
     }
-    
+
+    @FXML
+    private void ADDTOCART(ActionEvent event) {
+        
+        CartService cs=new CartService();
+        cs.addBookToCart(user_id, Integer.parseInt(book_i.getText()),b.getPrice());
+        
+    }
 }

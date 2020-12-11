@@ -5,7 +5,7 @@
  */
 package com.esprit.views;
 
-import com.esprit.models.Book;
+import com.B8ks.entities.Book;
 import com.esprit.services.ServicesBook;
 import java.net.URL;
 import java.util.ResourceBundle;

@@ -10,7 +10,7 @@ import com.B8ks.entities.Category;
 import com.esprit.services.SendMail;
 import com.esprit.services.ServicesBook;
 import com.esprit.services.ServicesCategory;
-import com.B8ks.entities.senMain;
+import com.esprit.tests.senMain;
 import com.esprit.utils.validationSaisie;
 import java.io.IOException;
 import java.net.URL;

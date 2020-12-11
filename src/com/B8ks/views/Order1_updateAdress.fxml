@@ -7,13 +7,12 @@
 
 <AnchorPane id="AnchorPane" fx:id="C" prefHeight="551.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.B8ks.views.Order1_updateAdressController">
    <children>
-      <Label layoutX="71.0" layoutY="246.0" text="E-mail" />
       <Label layoutX="71.0" layoutY="182.0" text="Adresse" />
       <Label layoutX="71.0" layoutY="112.0" text="Numero de Telephone" />
-      <Label layoutX="272.0" layoutY="39.0" text="Votre " />
-      <TextField layoutX="197.0" layoutY="108.0" />
-      <TextField layoutX="197.0" layoutY="169.0" />
-      <TextField layoutX="197.0" layoutY="233.0" />
-      <Button fx:id="save" layoutX="456.0" layoutY="182.0" mnemonicParsing="false" onAction="#GoToOrder1" text="Enregistrer" />
+      <Label layoutX="272.0" layoutY="39.0" text="Yout details : " />
+      <TextField fx:id="mobile" layoutX="234.0" layoutY="108.0" style="-fx-border-radius: 100px; -fx-background-radius: 100px;" />
+      <TextField fx:id="adresse" layoutX="234.0" layoutY="169.0" style="-fx-border-radius: 100px; -fx-background-radius: 100px;" />
+      <Button fx:id="save" layoutX="456.0" layoutY="182.0" mnemonicParsing="false" onAction="#GoToOrder1" style="-fx-border-radius: 100px; -fx-background-color: transparent; -fx-border-color: #007782;" text="Cancel" />
+      <Button fx:id="save1" layoutX="456.0" layoutY="220.0" mnemonicParsing="false" onAction="#Save" style="-fx-border-radius: 100px; -fx-background-color: transparent; -fx-border-color: #007782;" text="Enregistrer" />
    </children>
 </AnchorPane>

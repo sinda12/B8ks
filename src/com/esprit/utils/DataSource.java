@@ -17,14 +17,14 @@ public class DataSource {
     
     private Connection cnx;
     
-    private final String URL = "jdbc:mysql://localhost:3306/esprit";
+    private final String URL = "jdbc:mysql://localhost:3306/b8ks";
     private final String USERNAME = "root";
     private final String PASSWORD = "";
     
     private DataSource() {
         try {
        cnx = (Connection) DriverManager.getConnection(URL, USERNAME, PASSWORD);
-            System.out.println("Connected to Esprit !");
+            System.out.println("Connected to b8ks !");
         }
         catch (SQLException ex) {
             System.out.println(ex.getMessage());

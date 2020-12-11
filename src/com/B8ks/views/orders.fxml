@@ -7,7 +7,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="C" prefHeight="551.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.B8ks.views.OrdersController">
    <children>
-      <Button fx:id="panier" layoutX="74.0" layoutY="40.0" mnemonicParsing="false" onAction="#GoToCart" text="Back to Cart" />
+      <Button fx:id="panier" layoutX="74.0" layoutY="40.0" mnemonicParsing="false" onAction="#GoToCart" style="-fx-border-color: #007782; -fx-border-radius: 100px; -fx-background-color: transparent;" text="Back to Cart" />
       <TableView fx:id="table" layoutX="178.0" layoutY="190.0" prefHeight="200.0" prefWidth="431.0">
          <columns>
             <TableColumn fx:id="book" prefWidth="75.0" text="Book" />

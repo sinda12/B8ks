@@ -9,7 +9,7 @@
    <children>
       <AnchorPane layoutY="41.0" prefHeight="66.0" prefWidth="766.0">
          <children>
-            <Label fx:id="Livraison_button" alignment="CENTER" layoutX="134.0" layoutY="24.0" prefHeight="18.0" prefWidth="133.0" style="-fx-background-color: cornsilk;" text="DELIVERY" />
+            <Label fx:id="Livraison_button" alignment="CENTER" layoutX="134.0" layoutY="24.0" prefHeight="18.0" prefWidth="133.0" style="-fx-background-color: cornsilk; -fx-background-radius: 100px;" text="DELIVERY" />
             <Label fx:id="Paiement_Button" alignment="CENTER" layoutX="350.0" layoutY="24.0" opacity="0.95" prefHeight="18.0" prefWidth="104.0" style="-fx-background-color: cornsilk; -fx-background-radius: 2em;" text="PAYEMENT" textOverrun="CENTER_ELLIPSIS">
                <opaqueInsets>
                   <Insets />

@@ -5,7 +5,7 @@
  */
 package com.esprit.views;
 
-import com.esprit.models.Category;
+import com.B8ks.entities.Category;
 import com.esprit.services.ServicesCategory;
 import java.net.URL;
 import java.util.ResourceBundle;

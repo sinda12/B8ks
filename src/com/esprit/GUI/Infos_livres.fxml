@@ -68,7 +68,7 @@
                   </LinearGradient>
                </fill>
             </Text>
-            <Button fx:id="valider" layoutX="223.0" layoutY="497.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" style="-fx-background-radius: 100px; -fx-border-color: #007782; -fx-border-radius: 100px; -fx-background-color: #05071F;" text="Add to cart" textAlignment="CENTER" textFill="#007782" textOverrun="CENTER_ELLIPSIS">
+            <Button fx:id="valider" layoutX="223.0" layoutY="497.0" mnemonicParsing="false" onAction="#ADDTOCART" prefHeight="50.0" prefWidth="120.0" style="-fx-background-radius: 100px; -fx-border-color: #007782; -fx-border-radius: 100px; -fx-background-color: #05071F;" text="Add to cart" textAlignment="CENTER" textFill="#007782" textOverrun="CENTER_ELLIPSIS">
                <font>
                   <Font size="18.0" />
                </font>
@@ -80,5 +80,6 @@
             </Button>
          </children>
       </AnchorPane>
+      <Label fx:id="book_i" text="book_id" />
    </children>
 </AnchorPane>

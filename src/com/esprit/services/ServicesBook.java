@@ -42,7 +42,7 @@ public class ServicesBook {
     
     public void supprimer (Book b){
     try{
-    String req = "DELETE from book WHERE id=?";
+    String req = "DELETE from book WHERE book_id=?";
     PreparedStatement st = (PreparedStatement) cnx.prepareStatement(req);
     st.setInt(1, b.getId());
     st.executeUpdate();
@@ -54,7 +54,7 @@ public class ServicesBook {
     
     public void modifier (Book b){
     try{
-    String req = "UPDATE book SET title=?, author=?, cat=?, description=?, publishDate=? ,price=?, img=? WHERE id=?";
+    String req = "UPDATE book SET title=?, author=?, cat=?, description=?, publishDate=? ,price=?, img=? WHERE book_id=?";
     PreparedStatement st = (PreparedStatement) cnx.prepareStatement(req);
     st.setString(1, b.getTitle());
     st.setString(2, b.getPublisher());
@@ -73,7 +73,7 @@ public class ServicesBook {
     public List<Book> afficher (){
         List<Book> listBook = new ArrayList<>();
     try{
-    String req = "SELECT * From Book b left join Category c on b.id = c.id";
+    String req = "SELECT * From Book b left join Category c on b.book_id = c.id";
     PreparedStatement st = (PreparedStatement) cnx.prepareStatement(req);
     ResultSet res = st.executeQuery();
     while(res.next()){
@@ -89,7 +89,7 @@ public class ServicesBook {
     public List<Book> afficherID (int id){
         List<Book> listBook = new ArrayList<>();
     try{
-    String req = "SELECT * From Book where id=?";
+    String req = "SELECT * From Book where book_id=?";
     PreparedStatement st = (PreparedStatement) cnx.prepareStatement(req);
     ResultSet res = st.executeQuery();
     while(res.next()){

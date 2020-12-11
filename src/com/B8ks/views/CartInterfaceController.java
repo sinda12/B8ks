@@ -154,7 +154,7 @@ public class CartInterfaceController implements Initializable {
     void goToOrder(ActionEvent event) throws IOException {
         if(Double.parseDouble(prixTotal.getText())>1){
             
-        AnchorPane pane=FXMLLoader.load(getClass().getResource("Order2_Payment.fxml"));
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("Order1.fxml"));
         C.getChildren().setAll(pane); }
         else{
             alert.setTitle("information");

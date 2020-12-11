@@ -67,7 +67,7 @@ public class HomeController implements Initializable {
     @FXML
     private void Books(ActionEvent event) {
          FxmlLoader o=new FxmlLoader();
-         Pane view=o.getPage("@../com/esprit/GUI/Infos_livres");
+         Pane view=o.getPage("../../esprit/GUI/Liste_livres");
          mainPane.setCenter(view);
     }
 

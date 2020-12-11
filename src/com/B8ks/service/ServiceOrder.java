@@ -155,6 +155,25 @@ public class ServiceOrder{
         
         return  t;
     }
+    //******************
+            public void modifierClient(int user_id,String a,int mobile) {
+       
+         try {
+              String req="UPDATE user SET adresse=?,mobile=? where user_id=?";
+            PreparedStatement pst = cnx.prepareStatement(req);
+
+            pst.setInt(3, user_id);
+           
+            pst.setString(1,a);
+            pst.setInt(2,mobile);
+            
+            
+            pst.executeUpdate();
+            System.out.println("user updated");
+          } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+          
+          }  }
 //*******************************************
     public void addO(int user_id) {
      

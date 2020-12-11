@@ -138,6 +138,30 @@ public class Order {
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public String getBook() {
+        return book;
+    }
+
+    public void setBook(String book) {
+        this.book = book;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
     
     @Override
     public int hashCode() {

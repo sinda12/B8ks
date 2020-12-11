@@ -141,6 +141,23 @@ public void supprimerC(Cart c) {
           
           }        
     }
+    //**************************
+    public void addBookToCart(int user_id,int b,double p) {
+       
+         try {
+              String req="INSERT INTO cart (user_id,book_id,price) values(?,?,?)";
+            PreparedStatement pst = cnx.prepareStatement(req);
+            //c.getUser.getUser_id(
+            pst.setInt(1, user_id);
+            pst.setInt(2, b);
+            pst.setDouble(3, p);
+            pst.executeUpdate();
+            System.out.println("Panier ajoutée");
+          } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+          
+          }        
+    }
     
     
     

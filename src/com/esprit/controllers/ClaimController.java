@@ -46,6 +46,11 @@ public class ClaimController extends BaseController {
         if (description.getText().trim().length() > 0){
                u.setId(21);
         sc.create(new Claim(description.getText()),u);
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Claim sent !!");
+            alert.setHeaderText(null);
+            alert.setContentText("Claim sent successfully !!");
+            alert.showAndWait();
         }else{
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("TextField is empty !!");

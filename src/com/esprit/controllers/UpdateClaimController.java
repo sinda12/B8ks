@@ -13,6 +13,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
@@ -56,6 +57,11 @@ public class UpdateClaimController extends BaseController implements Initializab
     @FXML
     private void update(ActionEvent event) {
         sc.modify(new Claim(id_claim,description.getText()));
+                            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Claim updated !!");
+            alert.setHeaderText(null);
+            alert.setContentText("Claim updated successfully !!");
+            alert.showAndWait();
     }
     
 }

@@ -58,6 +58,11 @@ public class CreateReviewController extends BaseController {
         if (description.getText().trim().length() > 0){
                u.setId(21);
         sr.create(new Review(description.getText(), (int) choicebox.getValue()),u);
+                            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Review created !!");
+            alert.setHeaderText(null);
+            alert.setContentText("Review created successfully !!");
+            alert.showAndWait();
         }else{
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("TextField is empty !!");

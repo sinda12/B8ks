@@ -15,6 +15,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
@@ -74,6 +75,11 @@ public class UpdateReviewController extends BaseController implements Initializa
     @FXML
     private void send(ActionEvent event) {
         sr.modify(new Review(id_review,description.getText(),choicebox.getValue()));
+                            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Review updated !!");
+            alert.setHeaderText(null);
+            alert.setContentText("Review updated successfully !!");
+            alert.showAndWait();
     }
     
 }

@@ -5,6 +5,9 @@
  */
 package com.B8ks.entities;
 
+import java.util.ArrayList;
+import java.util.Objects;
+
 
 
 /**
@@ -14,24 +17,22 @@ package com.B8ks.entities;
 public class Cart {
     private int cart_id;
     private int user_id;
-    private int quantity;
-    private int book_id;
+    private ArrayList<Integer> quantity= new ArrayList<>();
+    private ArrayList<Book> books= new ArrayList<>();
 
     public Cart() {
     }
 
-    public Cart(int user_id, int quantity, int book_id) {
-        this.user_id = user_id;
-        this.quantity = quantity;
-        this.book_id = book_id;
-    }
-
-    public Cart(int cart_id, int user_id, int quantity, int book_id) {
+    public Cart(int cart_id, int user_id) {
         this.cart_id = cart_id;
         this.user_id = user_id;
-        this.quantity = quantity;
-        this.book_id = book_id;
     }
+
+    public Cart(int user_id) {
+        this.user_id = user_id;
+    }
+
+
 
     public int getCart_id() {
         return cart_id;
@@ -49,29 +50,29 @@ public class Cart {
         this.user_id = user_id;
     }
 
-    public int getQuantity() {
+    public ArrayList<Integer> getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(ArrayList<Integer> quantity) {
         this.quantity = quantity;
     }
 
-    public int getBook_id() {
-        return book_id;
+    public ArrayList<Book> getBooks() {
+        return books;
     }
 
-    public void setBook_id(int book_id) {
-        this.book_id = book_id;
+    public void setBooks(ArrayList<Book> books) {
+        this.books = books;
     }
 
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 29 * hash + this.cart_id;
-        hash = 29 * hash + this.user_id;
-        hash = 29 * hash + this.quantity;
-        hash = 29 * hash + this.book_id;
+        int hash = 3;
+        hash = 59 * hash + this.cart_id;
+        hash = 59 * hash + this.user_id;
+        hash = 59 * hash + Objects.hashCode(this.quantity);
+        hash = 59 * hash + Objects.hashCode(this.books);
         return hash;
     }
 
@@ -93,19 +94,22 @@ public class Cart {
         if (this.user_id != other.user_id) {
             return false;
         }
-        if (this.quantity != other.quantity) {
+        if (!Objects.equals(this.quantity, other.quantity)) {
             return false;
         }
-        if (this.book_id != other.book_id) {
+        if (!Objects.equals(this.books, other.books)) {
             return false;
         }
         return true;
     }
-
-    @Override
-    public String toString() {
-        return "Cart{" + "cart_id=" + cart_id + ", user_id=" + user_id + ", quantity=" + quantity + ", book_id=" + book_id + '}';
+    
+    public void addBook(Book book,int quantity){
+        books.add(book);
+        this.quantity.add(quantity);
     }
+    
+
+
 
    
     

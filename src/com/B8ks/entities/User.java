@@ -8,6 +8,7 @@ public class User  {
     private int id,mobile, age;
     private String nom,prenom,adresse,email,password;
     private Boolean isAdmin ;
+    private int cart_id;
     private List<Order> orders = new ArrayList<Order>();
     private List<Blog> blogs = new ArrayList<Blog>() ;
     private List<UsedBook> usedBooks = new ArrayList<UsedBook>() ;
@@ -15,6 +16,35 @@ public class User  {
     private List<NewsLetter> newsLetters = new ArrayList<NewsLetter>() ;
 
     public User() {
+    }
+
+    public User(int cart_id) {
+        this.cart_id = cart_id;
+    }
+
+    public User(int mobile, int age, String nom, String prenom, String adresse, String email, String password, Boolean isAdmin, int cart_id) {
+        this.mobile = mobile;
+        this.age = age;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.adresse = adresse;
+        this.email = email;
+        this.password = password;
+        this.isAdmin = isAdmin;
+        this.cart_id = cart_id;
+    }
+
+    public User(int id, int mobile, int age, String nom, String prenom, String adresse, String email, String password, Boolean isAdmin, int cart_id) {
+        this.id = id;
+        this.mobile = mobile;
+        this.age = age;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.adresse = adresse;
+        this.email = email;
+        this.password = password;
+        this.isAdmin = isAdmin;
+        this.cart_id = cart_id;
     }
 
     public User(int mobile, int age, String nom, String prenom, String adresse, String email, String password) {

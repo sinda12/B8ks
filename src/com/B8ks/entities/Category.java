@@ -14,16 +14,51 @@ import java.util.Objects;
  * @author gar4a
  */
 public class Category {
-    private int id;
-    private String title;
+  private int id;
+    private String title_cat;
+    private String desc;
+    private Book boo;
     private List <Book> lb = new ArrayList<Book>();
 
-    public Category() {
+    public Category(int id, String title_cat, Book boo) {
+        this.id = id;
+        this.title_cat = title_cat;
+        this.boo = boo;
     }
 
-    public Category(int id, String title) {
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public Category(int id, String title_cat, String desc) {
         this.id = id;
-        this.title = title;
+        this.title_cat = title_cat;
+        this.desc = desc;
+    }
+
+    public Category(String title_cat, String desc) {
+        this.title_cat = title_cat;
+        this.desc = desc;
+    }
+
+    public Category(String title_cat) {
+        this.title_cat = title_cat;
+    }
+    
+    public Category(int id) {
+        this.id = id;
+    }
+
+    public Category(int id, String title_cat) {
+        this.id = id;
+        this.title_cat = title_cat;
+    }
+
+    public Category() {
     }
 
     public int getId() {
@@ -34,12 +69,20 @@ public class Category {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getTitle_cat() {
+        return title_cat;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setTitle_cat(String title_cat) {
+        this.title_cat = title_cat;
+    }
+
+    public Book getBoo() {
+        return boo;
+    }
+
+    public void setBoo(Book boo) {
+        this.boo = boo;
     }
 
     public List<Book> getLb() {
@@ -52,12 +95,14 @@ public class Category {
 
     @Override
     public String toString() {
-        return "Category{" + "id=" + id + ", title=" + title + ", lb=" + lb + '}';
+        return "Category{" + "id=" + id + ", title_cat=" + title_cat + ", desc=" + desc + '}';
     }
+
+    
 
     @Override
     public int hashCode() {
-        int hash = 7;
+        int hash = 5;
         return hash;
     }
 
@@ -73,14 +118,13 @@ public class Category {
             return false;
         }
         final Category other = (Category) obj;
-        if (this.id != other.id) {
-            return false;
-        }
-        if (!Objects.equals(this.title, other.title)) {
+        if (!Objects.equals(this.title_cat, other.title_cat)) {
             return false;
         }
         return true;
     }
+
     
+
     
 }

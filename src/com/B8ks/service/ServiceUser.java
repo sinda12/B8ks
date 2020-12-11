@@ -32,11 +32,12 @@ Connection cnx = DataSource.getInstance().getCnx();
             System.out.println("ajout reussi !!!");
 
         } catch (SQLException e) {
-            System.out.println("lekhraaaa");
+            System.out.println("not working");
             e.printStackTrace();
         }
 
     }
+    
 
     @Override
     public List<User> getList() {

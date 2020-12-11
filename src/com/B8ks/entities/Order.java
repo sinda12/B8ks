@@ -1,20 +1,72 @@
 package com.B8ks.entities;
 
 public class Order {
+    Book books=new Book();
     private int order_id;
     private int cart_id;
     private User user;
     private String status;
-    private float totalPrice;
+    private double totalPrice;
+    private int quantity;
+    private int user_id;
+    
+    private String book; //=books.getTitle();
+    private double price; //=books.getPrice();
+    
+    
+    
 
     public Order() {
     }
 
-    public Order(int cart_id, User user, String status, float totalPrice) {
+    public Order(String book, double price, int quantity,int order_id) {
+        this.order_id = order_id;
+        this.quantity = quantity;
+        this.book = book;
+        this.price = price;
+    }
+
+    public Order(int order_id, int cart_id, int user_id, String status, double totalPrice) {
+        this.order_id = order_id;
+        this.cart_id = cart_id;
+        this.status = status;
+        this.totalPrice = totalPrice;
+        this.user_id = user_id;
+    }
+   
+
+    public Order(String book, double price, int quantity, String status) {
+        this.book = book;
+        this.price = price;
+        this.quantity = quantity;
+        this.status = status;
+        
+    }
+
+    public Order(int cart_id, User user, String status, double totalPrice) {
         this.cart_id = cart_id;
         this.user = user;
         this.status = status;
         this.totalPrice = totalPrice;
+        
+    }
+
+    public Order(int cart_id, double totalPrice, int user_id) {
+        this.cart_id = cart_id;
+        this.totalPrice = totalPrice;
+        this.user_id = user_id;
+    }
+
+    public Order(int order_id, int cart_id, User user, String status, double totalPrice, int quantity, int user_id, String book, double price) {
+        this.order_id = order_id;
+        this.cart_id = cart_id;
+        this.user = user;
+        this.status = status;
+        this.totalPrice = totalPrice;
+        this.quantity = quantity;
+        this.user_id = user_id;
+        this.book = book;
+        this.price = price;
     }
 
  
@@ -27,13 +79,24 @@ public class Order {
     }
 
     
-    public Order(int order_id,  int cart_id,User user, String status, float totalPrice) {
+    public Order(int order_id,  int cart_id,User user, String status, double totalPrice) {
         this.order_id = order_id;
         this.cart_id = cart_id;
         this.user = user;
         this.status = status;
         this.totalPrice = totalPrice;
     }
+
+
+    public int getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
+    }
+
+
 
     public int getOrder_id() {
         return order_id;
@@ -72,7 +135,7 @@ public class Order {
         return totalPrice;
     }
 
-    public void setTotalPrice(float totalPrice) {
+    public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
     
@@ -105,8 +168,12 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" + "order_id=" + order_id + ", cart_id=" + cart_id + ", user=" + user + ", status=" + status + ", totalPrice=" + totalPrice + '}';
+        return "Order{" + "status=" + status + ", quantity=" + quantity + ", book=" + book + ", price=" + price + '}';
     }
+
+
+
+
 
 
 

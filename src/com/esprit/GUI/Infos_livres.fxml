@@ -47,6 +47,7 @@
                      </font>
                   </Label>
                   <ImageView fx:id="imglivre" fitHeight="347.0" fitWidth="244.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="book_i" layoutX="622.0" layoutY="329.0" prefHeight="17.0" prefWidth="70.0" />
                   <Label fx:id="txttitre" layoutX="498.0" layoutY="20.0" prefHeight="26.0" prefWidth="152.0" textFill="WHITE" />
                   <Label fx:id="txtauteur" layoutX="498.0" layoutY="55.0" prefHeight="26.0" prefWidth="152.0" />
                   <Label fx:id="txtprix" layoutX="498.0" layoutY="90.0" prefHeight="26.0" prefWidth="152.0" />
@@ -80,6 +81,5 @@
             </Button>
          </children>
       </AnchorPane>
-      <Label fx:id="book_i" text="book_id" />
    </children>
 </AnchorPane>

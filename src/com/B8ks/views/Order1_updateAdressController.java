@@ -69,7 +69,7 @@ public class Order1_updateAdressController implements Initializable {
         
         AnchorPane pane=FXMLLoader.load(getClass().getResource("Order1.fxml"));
         C.getChildren().setAll(pane);}
-        else if(("".equals(mobile.getText()))&&("".equals(adresse.getText()))){
+        else if(("".equals(mobile.getText()))||("".equals(adresse.getText()))){
             alert.setTitle("information");
             alert.setHeaderText(null);
             alert.setContentText("type valide information !");

@@ -8,6 +8,7 @@ package com.B8ks.views;
 
 import com.B8ks.service.CartService;
 import com.B8ks.service.ServiceOrder;
+import static com.B8ks.views.HomeController.nb;
 import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;
@@ -36,7 +37,7 @@ import javax.swing.JOptionPane;
  *
  * @author sinda
  */
-public class Order2_PaymentController implements Initializable {
+public class Order2_PaymentController extends HomeController implements Initializable {
     
     int u_i=3;
 
@@ -113,6 +114,11 @@ public class Order2_PaymentController implements Initializable {
             so.addO(u_i);
             sc.addToArchive(u_i);
             sc.deleteCartOrdred(u_i);
+            
+            //***panier --
+            nb.setText(cs.nbPanier(user_id));
+            
+            
             
             
             

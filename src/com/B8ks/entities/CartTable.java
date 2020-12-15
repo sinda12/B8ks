@@ -57,6 +57,14 @@ public class CartTable {
         this.cart_id=cart_id;
     }
 
+    public CartTable(String book, double price, int quantity, int cart_id,int book_id) {
+        this.book = book;
+        this.price = price;
+        this.quantity = quantity;
+        this.cart_id=cart_id;
+        this.book_id=book_id;
+    }
+
     public int getUser_id() {
         return user_id;
     }

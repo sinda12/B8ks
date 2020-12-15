@@ -56,11 +56,15 @@ int user_id=3;
     private TableColumn<Book, String> ColDate;
     @FXML
     private TableColumn<Book, Double> Colprix;
+    @FXML
+    private TableColumn<Book, Integer> id;
+    
     ObservableList o;
     @FXML
     private TextField search;
     @FXML
     private AnchorPane C;
+
     /**
      * Initializes the controller class.
      */
@@ -75,6 +79,8 @@ int user_id=3;
         ColDate.setCellValueFactory(new PropertyValueFactory<Book, String>("publishDate"));
         ColAuth.setCellValueFactory(new PropertyValueFactory<Book, String>("publisher"));
         ColType.setCellValueFactory(new PropertyValueFactory<Book, String>("Cat"));
+        id.setCellValueFactory(new PropertyValueFactory<Book, Integer>("id"));
+        System.out.println(ab);
         TabBook.setItems(getItems());
             }
     public ObservableList<Book> getItems() {

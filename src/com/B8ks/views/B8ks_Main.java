@@ -15,6 +15,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  *
@@ -22,11 +23,14 @@ import javafx.stage.Stage;
  */
 public class B8ks_Main extends Application {
     
+    public static Stage stage = null;
     @Override
     public void start(Stage stage) throws IOException {
         Parent root =  FXMLLoader.load(getClass().getResource("Home.fxml"));
         Scene scene=new Scene(root);
         stage.setScene(scene);
+        stage.initStyle(StageStyle.UNDECORATED);
+        this.stage = stage;
         stage.show();
                
 

@@ -4,10 +4,18 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/B8ks/views/B8ks_Main.java</file>
-            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/B8ks/views/Style.css</file>
-            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/test/TheMain.java</file>
-            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/B8ks/views/FxmlLoader.java</file>
+            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/esprit/GUI/Infos_livresController.java</file>
+            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/B8ks/service/CartService.java</file>
+            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/Main1.java</file>
+            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/B8ks/entities/CartTable.java</file>
+            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/B8ks/views/Order1Controller.java</file>
+            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/B8ks/views/Admin_Order_viewController.java</file>
+            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/B8ks/views/Home_pageController.java</file>
+            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/B8ks/views/CartInterfaceController.java</file>
+            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/B8ks/views/Order1_updateAdressController.java</file>
+            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/esprit/GUI/Liste_livresController.java</file>
             <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/B8ks/views/HomeController.java</file>
+            <file>file:/C:/Users/sghai/OneDrive/Desktop/java%20esprit/Projects/B8ks/src/com/B8ks/views/Order2_PaymentController.java</file>
         </group>
     </open-files>
 </project-private>

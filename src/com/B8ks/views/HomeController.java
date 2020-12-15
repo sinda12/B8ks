@@ -15,10 +15,14 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import com.B8ks.service.CartService;
 
 /**
  * FXML Controller class
@@ -26,6 +30,8 @@ import javafx.stage.Stage;
  * @author sinda
  */
 public class HomeController implements Initializable {
+    
+    int user_id=3;
 
     @FXML
     private Button btnHome;
@@ -42,22 +48,60 @@ public class HomeController implements Initializable {
     @FXML
     private Button btnSignout;
     @FXML
-    private TextField serch;
-    @FXML
     private Button btnCart;
     @FXML
     public BorderPane mainPane;
+    @FXML
+    private AnchorPane parent;
 
-    /**
-     * Initializes the controller class.
-     */
+    private double xOffSet = 0;
+    private double yOffSet = 0;
+    
+    
+    @FXML
+    private Label nbPanier;
+    CartService cs=new CartService();
+    
+    public static Label nb;
+    
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+         FxmlLoader o=new FxmlLoader();
+         Pane view=o.getPage("home_page");
+         mainPane.setCenter(view);
+        makeStageDragable();
+        nbPanier.setText(cs.nbPanier(user_id));
+        nb=nbPanier;
+    }
+    
+
+
+
+    private void makeStageDragable() {
+        parent.setOnMousePressed((event) -> {
+            xOffSet = event.getSceneX();
+            yOffSet = event.getSceneY();
+        });
+        parent.setOnMouseDragged((event) -> {
+            B8ks_Main.stage.setX(event.getScreenX() - xOffSet);
+            B8ks_Main.stage.setY(event.getScreenY() - yOffSet);
+            B8ks_Main.stage.setOpacity(0.8f);
+        });
+        parent.setOnDragDone((event) -> {
+            B8ks_Main.stage.setOpacity(1.0f);
+        });
+        parent.setOnMouseReleased((event) -> {
+            B8ks_Main.stage.setOpacity(1.0f);
+        });
     }    
 
     @FXML
     private void Home(ActionEvent event) {
+         FxmlLoader o=new FxmlLoader();
+         Pane view=o.getPage("home_page");
+         mainPane.setCenter(view);
     }
 
     @FXML
@@ -87,9 +131,6 @@ public class HomeController implements Initializable {
     private void SingOut(ActionEvent event) {
     }
 
-    @FXML
-    private void SearchBookByN(ActionEvent event) {
-    }
 
     @FXML
     private void GoToCart(ActionEvent event) {
@@ -99,6 +140,15 @@ public class HomeController implements Initializable {
          
         
   
+    }
+     @FXML
+    private void minimize_stage(MouseEvent event) {
+        B8ks_Main.stage.setIconified(true);
+    }
+
+    @FXML
+    private void close_app(MouseEvent event) {
+        System.exit(0);
     }
     
 }

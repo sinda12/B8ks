@@ -73,12 +73,48 @@ public void supprimerC(Cart c) {
 
     
 //***************************************************************used**** supprission
+   /*public void supprimerCControllerdef(int user_id,CartTable c) {
+       
+         try {
+            
+          String req="DELETE from cart where user_id=? and book_id=?";
+          
+            PreparedStatement st = (PreparedStatement) cnx.prepareStatement(req);
+            st.setInt(1,user_id);
+            st.setInt(2,c.getBook_id());
+             System.out.println(c.getBook_id());
+            ResultSet res = st.executeQuery();
+            System.out.println("panier est supprimée");
+          } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+          }   
+     
+    } 
+   
+    
+        public void supprimerCControllerID(int user_id,int book_id) {
+       
+         try {
+            
+          String req="DELETE from cart where user_id="+user_id+"and book_id="+ book_id;
+          cnx.createStatement().executeUpdate(req);
+             System.out.println(book_id);
+            System.out.println("panier est supprimée");
+          } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+          }   
+     
+    }  */
+    
+    
+           
     public void supprimerCController(CartTable c) {
        
          try {
             
           String req="DELETE from cart where cart_id="+ c.getCart_id();
           cnx.createStatement().executeUpdate(req);
+             System.out.println(c.getBook_id());
             System.out.println("panier est supprimée");
           } catch (SQLException ex) {
             System.out.println(ex.getMessage());
@@ -142,6 +178,22 @@ public void supprimerC(Cart c) {
           }        
     }
     //**************************
+   /* public void addBookToCart_copy(int user_id,int b,double p) {
+       
+         try {
+              String req="INSERT INTO cart_copy (user_id,book_id,price) values(?,?,?)";
+            PreparedStatement pst = cnx.prepareStatement(req);
+            //c.getUser.getUser_id(
+            pst.setInt(1, user_id);
+            pst.setInt(2, b);
+            pst.setDouble(3, p);
+            pst.executeUpdate();
+            System.out.println("Panier ajoutée");
+          } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+          
+          }        
+    }*/
     public void addBookToCart(int user_id,int b,double p) {
        
          try {
@@ -158,7 +210,20 @@ public void supprimerC(Cart c) {
           
           }        
     }
-    
+   
+   /* public void addBookToCart(int user_id) {
+       
+         try {
+              String req="INSERT INTO cart (user_id,book_id,quantity,price) select DISTINCT user_id,book_id,sum(quantity),price from cart_copy where user_id="+user_id+" group by book_id";
+            PreparedStatement pst = cnx.prepareStatement(req);
+            //c.getUser.getUser_id(
+            pst.executeUpdate();
+            System.out.println("Panier ajoutée");
+          } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+          
+          }        
+    }*/
     
     
 
@@ -190,12 +255,12 @@ public void supprimerC(Cart c) {
         List<CartTable> list = new ArrayList<>();
        
          try {
-            String req="SELECT b.title,b.price,c.quantity,c.cart_id from cart c,book b where b.book_id=c.book_id and c.user_id=?";
+            String req="SELECT DISTINCT b.title,b.price,sum(c.quantity),c.cart_id,c.book_id from cart c,book b where b.book_id=c.book_id and c.user_id=? group by c.book_id";
             PreparedStatement st = (PreparedStatement) cnx.prepareStatement(req);
             st.setInt(1,user_id);
             ResultSet res = st.executeQuery();
             while (res.next()){
-                list.add(new CartTable(res.getString(1), res.getDouble(2),res.getInt(3),res.getInt(4)));
+                list.add(new CartTable(res.getString(1), res.getDouble(2),res.getInt(3),res.getInt(4),res.getInt(5)));
             }
              System.out.println("Panier affichée");
              
@@ -261,6 +326,32 @@ public void supprimerC(Cart c) {
         
         return  Double.toString(t);
     }
+    
+  //*************************calcule panier
+    
+    public String nbPanier(int user_id){
+        
+        int t=0;
+        try {
+        String req="SELECT sum(quantity) from cart where user_id=?";
+        PreparedStatement st = (PreparedStatement) cnx.prepareStatement(req);
+        st.setInt(1,user_id);
+
+        ResultSet res = st.executeQuery();
+        
+         while (res.next()){
+        t=res.getInt(1);}
+        
+                     System.out.println("panier");
+          } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+          
+          } 
+        
+        return  Integer.toString(t);
+    }
+    
+    
   //***************************useeeeeeeed
     
     
@@ -317,6 +408,10 @@ public void supprimerC(Cart c) {
           
           }        
     }
+    
+
+    
+    
     */
 
     

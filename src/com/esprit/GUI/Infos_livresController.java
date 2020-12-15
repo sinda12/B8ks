@@ -7,6 +7,7 @@ package com.esprit.GUI;
 
 import com.B8ks.entities.Book;
 import com.B8ks.service.CartService;
+import com.B8ks.views.HomeController;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -26,7 +27,7 @@ import javafx.stage.Stage;
  *
  * @author gar4a
  */
-public class Infos_livresController implements Initializable {
+public class Infos_livresController extends HomeController implements Initializable {
 int user_id=3;
     @FXML
     private Label txttitre;
@@ -41,6 +42,8 @@ int user_id=3;
     @FXML
     private Button valider;
     @FXML
+    private Label book_i;
+    @FXML
     private Button Annuler;
     @FXML
     private Label txttype;
@@ -49,22 +52,25 @@ int user_id=3;
     private ImageView imglivre;
     @FXML
     private AnchorPane GetInfos;
-    @FXML
-    private Label book_i;
-    /**
-     * Initializes the controller class.
-     */
+
+    
+    HomeController h=new HomeController();
+    CartService cs=new CartService();
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         GetInfos.setOnMouseEntered(e->{
             setInput();
         });
+        
+        
     } 
     
     public void setB(Book b) {
         this.b = b;
     }
     public void setInput (){
+        book_i.setText(Integer.toString(b.getId()));
         txttitre.setText(b.getTitle());
         txtauteur.setText(b.getPublisher());
         txtprix.setText(String.valueOf(b.getPrice()));
@@ -72,7 +78,7 @@ int user_id=3;
         txtdesc.setText(b.getDescr());
         txttype.setText((b.getCat()));
         imglivre.setImage(new Image(b.getImg()));
-        book_i.setText(String.valueOf(b.getId()));
+        
 
             }
     @FXML
@@ -83,9 +89,12 @@ int user_id=3;
 
     @FXML
     private void ADDTOCART(ActionEvent event) {
+        //cs.addBookToCart_copy(user_id, Integer.parseInt(book_i.getText()),b.getPrice());
         
-        CartService cs=new CartService();
+        
         cs.addBookToCart(user_id, Integer.parseInt(book_i.getText()),b.getPrice());
         
+        nb.setText(cs.nbPanier(user_id));
+      
     }
 }

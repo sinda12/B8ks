@@ -37,7 +37,7 @@ import javafx.stage.Stage;
  *
  * @author sinda
  */
-public class CartInterfaceController implements Initializable {
+public class CartInterfaceController extends HomeController implements Initializable {
     
      int u_i=3;
     
@@ -104,6 +104,7 @@ public class CartInterfaceController implements Initializable {
         System.out.println(orderSelected);
         cs.supprimerCController(orderSelected);
         UpdateTable();
+        nb.setText(cs.nbPanier(user_id));
     }
     
     
@@ -121,14 +122,20 @@ public class CartInterfaceController implements Initializable {
         price.setCellValueFactory(new PropertyValueFactory<>("price"));
         quntity.setCellValueFactory(new PropertyValueFactory<>("quantity"));
         cart_id.setCellValueFactory(new PropertyValueFactory<>("cart_id"));
-        
+            System.out.println(orderSelected.getBook_id());
         table.getItems().addAll(ab);}
         
-        else{
+        else if(orderSelected.getQuantity()<1){
+            cs.supprimerCController(orderSelected);
+            UpdateTable();
+        }
+                else{
             cs.supprimerCController(orderSelected);
             UpdateTable();
         }
         this.prixTotal.setText(cs.prixTotale(u_i));
+        nb.setText(cs.nbPanier(user_id));
+      
     }
 
     @FXML
@@ -147,6 +154,7 @@ public class CartInterfaceController implements Initializable {
         
         table.getItems().addAll(ab);
         this.prixTotal.setText(cs.prixTotale(u_i));
+        nb.setText(cs.nbPanier(user_id));
     }
     
 

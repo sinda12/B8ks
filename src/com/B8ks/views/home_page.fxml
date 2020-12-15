@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="523.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.B8ks.views.Home_pageController">
+   <children>
+      <AnchorPane layoutX="226.0" layoutY="100.0" prefHeight="209.0" prefWidth="130.0" styleClass="book_image">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="130.0">
+               <image>
+                  <Image url="@../photos/book4.PNG" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="182.0" layoutY="14.0" text="Today a reader tomorrow a leader.." textFill="#f2d7d7">
+         <font>
+            <Font name="Bradley Hand ITC" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="382.0" layoutY="100.0" prefHeight="209.0" prefWidth="130.0" styleClass="book_image">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="130.0">
+               <image>
+                  <Image url="@../photos/book3.PNG" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="64.0" layoutY="100.0" prefHeight="210.0" prefWidth="113.0" styleClass="book_image">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="126.0" styleClass="book_image">
+               <image>
+                  <Image url="@../photos/book1.PNG" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="540.0" layoutY="100.0" prefHeight="209.0" prefWidth="130.0" styleClass="book_image">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="133.0">
+               <image>
+                  <Image url="@../photos/book2.PNG" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="541.0" layoutY="320.0" prefHeight="209.0" prefWidth="130.0" styleClass="book_image">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="131.0" styleClass="photo">
+               <image>
+                  <Image url="@../photos/book5.PNG" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="382.0" layoutY="320.0" prefHeight="209.0" prefWidth="130.0" styleClass="book_image">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="130.0">
+               <image>
+                  <Image url="@../photos/book7.PNG" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="225.0" layoutY="320.0" prefHeight="210.0" prefWidth="114.0" styleClass="book_image">
+         <children>
+            <ImageView fitHeight="199.0" fitWidth="128.0">
+               <image>
+                  <Image url="@../photos/book8.PNG" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="65.0" layoutY="320.0" prefHeight="210.0" prefWidth="116.0" styleClass="book_image">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="128.0">
+               <image>
+                  <Image url="@../photos/book6.PNG" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

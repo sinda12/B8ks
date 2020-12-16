@@ -44,7 +44,7 @@ public class MenuController extends BaseController {
 
     @FXML
     void modifier(ActionEvent event) {
-        if (validateEmail() & validateNom() & validatePassword() & validatePrenom() & validateTel() & validateFields()) {
+        if (validateEmail() & validateNom() &  validatePrenom() & validateTel() & validateFields()) {
             User s = su.modify(new User(idUser, Integer.valueOf(idMobil.getText()), Integer.valueOf(idAge.getText()), idNom.getText(), idPrenom.getText(), idAdresse.getText(), idEmail.getText(), idPasswordInscri.getText(), null));
             v.showAlertWithHeaderText("Modification reussite !!");
         } else
@@ -79,9 +79,6 @@ public class MenuController extends BaseController {
         this.idEmail.setText(idEmail);
     }
 
-    public void setIdPasswordInscri(String idPasswordInscri) {
-        this.idPasswordInscri.setText(idPasswordInscri);
-    }
 
     public void setIdUser(int idUser) {
         this.idUser = idUser;

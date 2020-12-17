@@ -29,7 +29,7 @@ Connection cnx = DataSource.getInstance().getCnx();
             st.setString(5,p.getAdresse());
             st.setString(6,p.getEmail());
             st.setString(7, BCrypt.hashpw(p.getPassword(), Tools.BCRYPT_SALT));
-            st.setBoolean(8,true);
+            st.setBoolean(8,false);
             st.executeUpdate();
             System.out.println("ajout reussi !!!");
 

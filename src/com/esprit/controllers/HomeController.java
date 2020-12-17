@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import com.esprit.cache.UserCache;
 import com.esprit.services.CartService;
 import com.esprit.views.ViewFactory;
 import javafx.event.ActionEvent;
@@ -139,6 +140,12 @@ public class HomeController implements Initializable {
     @FXML
     public void SingOut(ActionEvent event) throws IOException {
         v.showSignUp(event);
+        UserCache.id=0 ;
+        UserCache.prenom="";
+        UserCache.nom="";
+        UserCache.password="";
+
+
     }
 
 

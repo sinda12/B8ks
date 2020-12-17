@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="772.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.views.ShowClaimsController">
+   <children>
+      <TableView fx:id="table" layoutX="226.0" layoutY="98.0" prefHeight="415.0" prefWidth="572.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="98.0">
+        <columns>
+          <TableColumn fx:id="col_username" prefWidth="145.0" text="Username" />
+          <TableColumn fx:id="col_claim" prefWidth="426.0" text="Claim" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_delete" layoutX="649.0" layoutY="306.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #05071F; -fx-background-radius: 100px; -fx-border-color: #007782; -fx-border-radius: 100px;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btn_update" layoutX="647.0" layoutY="369.0" mnemonicParsing="false" onAction="#update" style="-fx-background-color: #05071F; -fx-background-radius: 100px; -fx-border-color: #007782; -fx-border-radius: 100px;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="btn_refresh" layoutX="649.0" layoutY="244.0" mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #05071F; -fx-background-radius: 100px; -fx-border-color: #007782; -fx-border-radius: 100px;" text="Refresh" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="83.0" layoutY="8.0" text="Claim List" textFill="#00ff11">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

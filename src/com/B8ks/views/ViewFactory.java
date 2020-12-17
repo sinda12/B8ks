@@ -1,28 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.B8ks.views;
+package com.esprit.views;
 
-import com.B8ks.controller.BaseController;
-import com.B8ks.controller.MenuController;
-import com.B8ks.controller.SignInController;
-import com.B8ks.controller.LoginController;
-import com.B8ks.controller.OrderAfficheAdminController;
-import java.io.IOException;
-import java.util.ArrayList;
+import com.esprit.controller.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 
-/**
- *
- * @author sinda
- */
+import java.io.IOException;
+import java.util.ArrayList;
+
 public class ViewFactory {
-    
+
     private ArrayList<Stage> activeStage ;
    public FXMLLoader fxmlLoader ;
 
@@ -51,12 +40,7 @@ public class ViewFactory {
 
 
     }
-    
-    public void showCart(ViewFactory v,String file)
-    {
-        BaseController c = new CartInterfaceContoller(this,"CartInterface.fxml") ;
-    }
-    
+
 public void showSignUp()
 {
     BaseController b = new LoginController(this, "sign_up.fxml");
@@ -76,13 +60,30 @@ public void showMenu()
     initializeStage(b);
 }
 
+public void showListUser()
+    {
+        BaseController b = new UsersController(this,"list_users.fxml");
+        initializeStage(b);
+    }
+
 public void closeStage(Stage stageToClose) {
         stageToClose.close();
         activeStage.remove(stageToClose);
     }
 
-public void showOrder ()
-{
-    BaseController b = new OrderAfficheAdminController(this,"OrderAfficheAdmin.fxml");
-}
+    public void showAlertWithHeaderText(String msg) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("login try");
+        alert.setHeaderText("Results:");
+        alert.setContentText(msg);
+
+        alert.showAndWait();
+    }
+
+ /*   public void showVerifMail()
+    {
+
+        BaseController b = new VerificationController(this,"verification.fxml");
+        initializeStage(b);
+    }*/
 }

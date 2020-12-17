@@ -1,10 +1,5 @@
-package com.B8ks.entities;
+package com.esprit.models ;
 
-import com.B8ks.entities.Blog;
-import com.B8ks.entities.NewsLetter;
-import com.B8ks.entities.Order;
-import com.B8ks.entities.UsedBook;
-import com.esprit.models.Claim;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -17,35 +12,18 @@ public class User  {
     private List<Blog> blogs = new ArrayList<Blog>() ;
     private List<UsedBook> usedBooks = new ArrayList<UsedBook>() ;
     private List<Claim> claims = new ArrayList<Claim>() ;
-    private List<NewsLetter> newsLetters = new ArrayList<NewsLetter>() ;
+    private List<Newsletter> newsLetters = new ArrayList<Newsletter>() ;
 
     public User() {
     }
-
-    public User(int mobile, int age, String nom, String prenom, String adresse, String email, String password) {
-        this.mobile = mobile;
-        this.age = age;
-        this.nom = nom;
-        this.prenom = prenom;
-        this.adresse = adresse;
-        this.email = email;
-        this.password = password;
+    
+    public User(String nom, String prenom) {
+    	this.nom=nom;
+    	this.prenom=prenom;
     }
 
     public User(int mobile, int age, String nom, String prenom, String adresse, String email, String password, Boolean isAdmin) {
 
-        this.mobile = mobile;
-        this.age = age;
-        this.nom = nom;
-        this.prenom = prenom;
-        this.adresse = adresse;
-        this.email = email;
-        this.password = password;
-        this.isAdmin = isAdmin;
-    }
-
-    public User(int id, int mobile, int age, String nom, String prenom, String adresse, String email, String password, Boolean isAdmin) {
-        this.id = id;
         this.mobile = mobile;
         this.age = age;
         this.nom = nom;
@@ -157,10 +135,18 @@ public class User  {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return
-
-                Objects.equals(email, user.email);
-
+        return id == user.id &&
+                mobile == user.mobile &&
+                age == user.age &&
+                Objects.equals(nom, user.nom) &&
+                Objects.equals(prenom, user.prenom) &&
+                Objects.equals(adresse, user.adresse) &&
+                Objects.equals(email, user.email) &&
+                Objects.equals(password, user.password) &&
+                Objects.equals(isAdmin, user.isAdmin) &&
+                Objects.equals(orders, user.orders) &&
+                Objects.equals(blogs, user.blogs) &&
+                Objects.equals(usedBooks, user.usedBooks);
     }
 
     @Override

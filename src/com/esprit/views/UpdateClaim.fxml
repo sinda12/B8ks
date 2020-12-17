@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: b53131;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="183.0" layoutY="45.0" text="Update your claim here !" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="description" layoutX="165.0" layoutY="124.0" prefHeight="151.0" prefWidth="285.0" />
+      <Button fx:id="updatebtn" layoutX="282.0" layoutY="306.0" mnemonicParsing="false" onAction="#update" text="Update" />
+   </children>
+</AnchorPane>

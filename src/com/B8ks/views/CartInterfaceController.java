@@ -101,7 +101,6 @@ public class CartInterfaceController extends HomeController implements Initializ
     void delete(ActionEvent event) {
         
         CartTable orderSelected=table.getSelectionModel().getSelectedItem();
-        System.out.println(orderSelected);
         cs.supprimerCController(orderSelected);
         UpdateTable();
         nb.setText(cs.nbPanier(user_id));

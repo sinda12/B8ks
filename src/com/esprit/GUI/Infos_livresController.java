@@ -8,6 +8,7 @@ package com.esprit.GUI;
 import com.B8ks.entities.Book;
 import com.B8ks.service.CartService;
 import com.B8ks.views.HomeController;
+import com.esprit.utils.validationSaisie;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -21,6 +22,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javax.swing.JOptionPane;
 
 /**
  * FXML Controller class
@@ -95,6 +97,9 @@ int user_id=3;
         cs.addBookToCart(user_id, Integer.parseInt(book_i.getText()),b.getPrice());
         
         nb.setText(cs.nbPanier(user_id));
+            /*validationSaisie.notifConfirm("Success", "Book created !");
+            
+            JOptionPane.showMessageDialog(null, "Book created !");*/
       
     }
 }

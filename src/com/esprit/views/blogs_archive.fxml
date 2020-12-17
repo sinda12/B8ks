@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="661.0" prefWidth="1055.0" style="-fx-background-color: #056969;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.BlogsArchive">
+   <children>
+      <ScrollPane layoutX="63.0" layoutY="149.0" prefHeight="462.0" prefWidth="968.0">
+         <content>
+            <VBox fx:id="vboxBlogList" prefHeight="398.0" prefWidth="968.0">
+               <children>
+                  <Pane prefHeight="14.0" prefWidth="896.0" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></VBox>
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="138.0" fitWidth="182.0" layoutX="859.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@4292601.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="29.0" layoutY="75.0" prefHeight="70.0" prefWidth="902.0">
+         <children>
+            <AnchorPane prefHeight="64.0" prefWidth="902.0">
+               <children>
+                  <Label layoutX="67.0" layoutY="13.0" prefHeight="38.0" prefWidth="111.0" text="Title" textFill="WHITE">
+                     <font>
+                        <Font name="Franklin Gothic Medium Cond" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="236.0" layoutY="12.0" prefHeight="38.0" prefWidth="111.0" text="Category" textFill="WHITE">
+                     <font>
+                        <Font name="Franklin Gothic Medium Cond" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="441.0" layoutY="13.0" prefHeight="38.0" prefWidth="111.0" text="Author" textFill="WHITE">
+                     <font>
+                        <Font name="Franklin Gothic Medium Cond" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="660.0" layoutY="13.0" prefHeight="38.0" prefWidth="111.0" text="Date" textFill="WHITE">
+                     <font>
+                        <Font name="Franklin Gothic Medium Cond" size="23.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="771.0" layoutY="7.0" mnemonicParsing="false" onAction="#add" prefHeight="56.0" prefWidth="47.0" style="-fx-background-color: rgba(0,0,0,0);">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-plus-480.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@blog.css" />
+   </stylesheets>
+</AnchorPane>

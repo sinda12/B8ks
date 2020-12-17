@@ -97,7 +97,7 @@ public void closeStage(Stage stageToClose) {
         alert.showAndWait();
     }
 
- /*   public void showVerifMail()
+  /*  public void showVerifMail()
     {
 
         BaseController b = new VerificationController(this,"verification.fxml");

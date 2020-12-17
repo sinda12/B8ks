@@ -49,7 +49,7 @@ public class SignInController extends BaseController {
 
     @FXML
     void register(ActionEvent event) {
-        if (validateEmail() & validateNom() & validatePassword() & validatePrenom() & validateTel() & validateFields()){
+        if (validateEmail() & validateNom() &  validatePrenom() & validateTel() & validateFields()){
   us.addUser(new User(Integer.valueOf(idMobil.getText()),Integer.valueOf(idAge.getText()),idNom.getText(),idPrenom.getText(),idAdresse.getText(),idEmail.getText(),idPasswordInscri.getText()));
 idNom.clear();idAge.clear();idMobil.clear();idEmail.clear();idPasswordInscri.clear();idAdresse.clear();idPrenom.clear();
 v.showAlertWithHeaderText("Ajout reussi !!");

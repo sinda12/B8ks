@@ -78,7 +78,7 @@ ServiceUser su = new ServiceUser();
             } else {
                 idEmail.setText("");
                 idPassword.setText("");
-              //  v.showAlertWithHeaderText("user not found");
+                v.showAlertWithHeaderText("user not found");
             }
 
         }
@@ -90,7 +90,7 @@ ServiceUser su = new ServiceUser();
     @FXML
     void cancel() {
         Stage s = (Stage) idBLogin.getScene().getWindow();
-//v.closeStage(s);
+v.closeStage(s);
     }
 
 

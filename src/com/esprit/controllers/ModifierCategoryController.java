@@ -1,4 +1,4 @@
-package Controller;
+package com.esprit.controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -47,7 +47,7 @@ public class ModifierCategoryController extends BaseController implements Initia
 		        b.setTitle(titrecs.getText());
 		        crudcategory sb = new crudcategory();
 		        sb.modifier(b);
-		        JOptionPane.showMessageDialog(null, "Catégorie Modifié !");
+		        JOptionPane.showMessageDialog(null, "Catï¿½gorie Modifiï¿½ !");
 		   });
     }
 

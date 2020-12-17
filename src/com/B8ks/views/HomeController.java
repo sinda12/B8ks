@@ -23,6 +23,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import com.B8ks.service.CartService;
+import java.io.IOException;
 
 /**
  * FXML Controller class
@@ -128,7 +129,12 @@ public class HomeController implements Initializable {
     }
 
     @FXML
-    private void SingOut(ActionEvent event) {
+    private void SingOut(ActionEvent event) throws IOException {
+                Parent orderParent = FXMLLoader.load(getClass().getResource("../../esprit/views/sign_up.fxml"));
+        Scene orderScene = new Scene(orderParent);
+        Stage window =(Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(orderScene);
+        window.show();
     }
 
 

@@ -4,7 +4,7 @@ import com.B8ks.entities.User;
 import com.B8ks.service.ServiceUser;
 import com.esprit.utils.Mail;
 import com.esprit.utils.Tools;
-import com.esprit.views.ViewFactory;
+import com.esprit.controllers.ViewFactory;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

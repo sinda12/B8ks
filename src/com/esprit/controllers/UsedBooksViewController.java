@@ -1,4 +1,4 @@
-package Controller;
+package com.esprit.controllers;
 
 import javafx.fxml.FXML;
 

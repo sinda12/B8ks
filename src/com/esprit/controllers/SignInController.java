@@ -2,12 +2,11 @@ package com.esprit.controllers;
 
 import com.B8ks.entities.User;
 import com.B8ks.service.ServiceUser;
-import com.esprit.views.ViewFactory;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
+import com.esprit.controllers.ViewFactory;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -47,7 +46,7 @@ public class SignInController extends BaseController {
     @FXML
     void register() {
         if (validateEmail() & validateNom() & validatePassword() & validatePrenom() & validateTel() & validateFields()){
-  us.addUser(new User(Integer.valueOf(idMobil.getText()),Integer.valueOf(idAge.getText()),idNom.getText(),idPrenom.getText(),idAdresse.getText(),idEmail.getText(),idPasswordInscri.getText()));
+us.adduser(new User(Integer.valueOf(idMobil.getText()),Integer.valueOf(idAge.getText()),idNom.getText(),idPrenom.getText(),idAdresse.getText(),idEmail.getText(),idPasswordInscri.getText()));
 idNom.clear();idAge.clear();idMobil.clear();idEmail.clear();idPasswordInscri.clear();idAdresse.clear();idPrenom.clear();
 v.showAlertWithHeaderText("Ajout reussi !!");
 v.showSignUp();

@@ -112,9 +112,8 @@ public void supprimerC(Cart c) {
        
          try {
             
-          String req="DELETE from cart where cart_id="+ c.getCart_id();
+          String req="DELETE from cart where book_id="+c.getBook_id(); //+ c.getCart_id();
           cnx.createStatement().executeUpdate(req);
-             System.out.println(c.getBook_id());
             System.out.println("panier est supprimée");
           } catch (SQLException ex) {
             System.out.println(ex.getMessage());

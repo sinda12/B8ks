@@ -5,7 +5,7 @@
  */
 package com.B8ks.service;
 
-import com.B8ks.cache.UserCache;
+
 import com.B8ks.entities.Order;
 import com.B8ks.entities.User;
 import com.B8ks.utils.DataSource;
@@ -25,7 +25,7 @@ import java.util.List;
 public class ServiceOrder{
     Connection cnx = DataSource.getInstance().getCnx();
     
-    public void ajouterO(Order o) {
+    /*public void ajouterO(Order o) {
        
          try {
               String req="INSERT INTO bookorder (cart_id,user_id,status,totalPrice) values(?,?,?,?)";
@@ -40,7 +40,7 @@ public class ServiceOrder{
             System.out.println(ex.getMessage());
           
           }        
-    }
+    }*/
     public void supprimerO(Order o) {
        
          try {

@@ -97,9 +97,9 @@ int user_id=3;
         cs.addBookToCart(user_id, Integer.parseInt(book_i.getText()),b.getPrice());
         
         nb.setText(cs.nbPanier(user_id));
-            /*validationSaisie.notifConfirm("Success", "Book created !");
+            validationSaisie.notifConfirm("Success", "BOOK ADDED TO YOUR CART !");
             
-            JOptionPane.showMessageDialog(null, "Book created !");*/
+            //JOptionPane.showMessageDialog(null, "Book created !");*/
       
     }
 }

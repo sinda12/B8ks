@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="itextpdf-5.5.13.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/itextpdf-5.5.13.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/itext-xtra-5.5.13.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/itext-pdfa-5.5.13.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/gson-2.8.6.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/xmlworker-5.5.13.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

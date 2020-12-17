@@ -1,7 +1,5 @@
 package com.esprit.services;
 
-
-
 import com.esprit.entities.User;
 import com.esprit.interfaces.Iservice;
 import com.esprit.utils.DataSource;
@@ -86,7 +84,7 @@ e.printStackTrace();
             st.setString(4,p.getPrenom());
             st.setString(5,p.getAdresse());
             st.setString(6,p.getEmail());
-            st.setString(7,p.getPassword());
+            st.setString(7,BCrypt.hashpw(p.getPassword(), Tools.BCRYPT_SALT));
             st.setInt(8,p.getId());
             System.out.println("modification reussite !!!!!");
             st.executeUpdate();
@@ -176,6 +174,12 @@ e.printStackTrace();
         }
 
         return test ;
+    }
+
+
+    @Override
+    public void delete(User p) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

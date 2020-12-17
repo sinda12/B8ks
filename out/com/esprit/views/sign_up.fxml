@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="375.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="375.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
    <children>
       <Label layoutX="143.0" layoutY="127.0" prefHeight="17.0" prefWidth="78.0" text="Email :" />
       <Label layoutX="143.0" layoutY="192.0" text="Password :" />

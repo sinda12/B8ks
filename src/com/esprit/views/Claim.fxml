@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: b53131;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="157.0" layoutY="33.0" text="Please send your claim !" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="description" layoutX="157.0" layoutY="116.0" prefHeight="139.0" prefWidth="278.0" promptText="Send your claim here">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Button fx:id="sendidbtn" layoutX="264.0" layoutY="294.0" mnemonicParsing="false" onAction="#send" text="Send" />
+   </children>
+</AnchorPane>

@@ -6,6 +6,7 @@ package com.esprit.controllers;
 import com.esprit.entities.User;
 import com.esprit.services.ServiceUser;
 import com.esprit.views.ViewFactory;
+import java.io.IOException;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -20,6 +21,10 @@ import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 
 
 public class UsersController extends BaseController implements Initializable {
@@ -136,6 +141,16 @@ public class UsersController extends BaseController implements Initializable {
         Stage stage = (Stage) idRole.getScene().getWindow();
       //  v.closeStage(stage);
       //  v.showSignUp();
+
+    }
+    
+    @FXML
+    void orders(ActionEvent event) throws IOException {
+        Parent orderParent = FXMLLoader.load(getClass().getResource("../views/Admin_Order_view.fxml"));
+        Scene orderScene = new Scene(orderParent);
+        Stage window =(Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(orderScene);
+        window.show();
 
     }
 }

@@ -138,7 +138,7 @@ public class Aff_modi_supp_livreController implements Initializable {
     private void addBook(ActionEvent event) {
     try {
              //System.exit(0);
-             Parent redirection_parent = FXMLLoader.load(getClass().getResource("Ajouter_livre.fxml"));
+             Parent redirection_parent = FXMLLoader.load(getClass().getResource("../views/Ajouter_livre.fxml"));
              Scene redirection_scene = new Scene(redirection_parent);
              Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
              app_stage.setScene(redirection_scene);
@@ -162,7 +162,7 @@ public class Aff_modi_supp_livreController implements Initializable {
         else{
         try {
              //System.exit(0);
-             Parent redirection_parent = FXMLLoader.load(getClass().getResource("ModifierLivre.fxml"));
+             Parent redirection_parent = FXMLLoader.load(getClass().getResource("../views/ModifierLivre.fxml"));
              Scene redirection_scene = new Scene(redirection_parent);
              Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
              app_stage.setScene(redirection_scene);
@@ -190,7 +190,7 @@ public class Aff_modi_supp_livreController implements Initializable {
 
     public void sendData(Book b) throws IOException{
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("ModifierLivre.fxml"));
+        loader.setLocation(getClass().getResource("../views/ModifierLivre.fxml"));
         Parent parent = loader.load();
         ModifierLivreController c = loader.getController();
         c.setB(b);
@@ -221,7 +221,7 @@ public class Aff_modi_supp_livreController implements Initializable {
         else{
             try {
              //System.exit(0);
-             Parent redirection_parent = FXMLLoader.load(getClass().getResource("Infos_livres.fxml"));
+             Parent redirection_parent = FXMLLoader.load(getClass().getResource("../views/Infos_livres.fxml"));
              Scene redirection_scene = new Scene(redirection_parent);
              Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
              app_stage.setScene(redirection_scene);

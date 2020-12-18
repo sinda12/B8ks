@@ -57,6 +57,9 @@ public class HomeController implements Initializable {
     private Button btnCart;
     @FXML
     public BorderPane mainPane;
+    
+    @FXML
+    private Label nameUs;
 
     @FXML
     private AnchorPane parent;
@@ -81,6 +84,7 @@ public class HomeController implements Initializable {
         makeStageDragable();
         nbPanier.setText(cs.nbPanier(user_id));
         nb=nbPanier;
+        nameUs.setText(UserCache.nom);
     }
     
 
@@ -161,7 +165,7 @@ public class HomeController implements Initializable {
         
   
     }
-     @FXML
+   @FXML
     private void minimize_stage(MouseEvent event) {
         B8ks_Main.stage.setIconified(true);
     }

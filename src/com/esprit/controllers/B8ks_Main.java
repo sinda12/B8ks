@@ -6,7 +6,13 @@
 package com.esprit.controllers;
 
 import java.io.IOException;
+
+import com.esprit.controllers.BaseController;
+import com.esprit.controllers.HomeController;
+import com.esprit.controllers.LoginController;
+import com.esprit.views.ViewFactory;
 import javafx.application.Application;
+import static javafx.application.Application.launch;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -22,17 +28,29 @@ import javafx.stage.StageStyle;
  * @author sinda
  */
 public class B8ks_Main extends Application {
-    
     public static Stage stage = null;
+    public FXMLLoader fxmlLoader ;
+    ViewFactory v = new ViewFactory();
+   BaseController baseController = new LoginController(new ViewFactory(),"../views/sign_up.fxml");
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root =  FXMLLoader.load(getClass().getResource("Home.fxml"));
-        Scene scene=new Scene(root);
+
+        fxmlLoader = new FXMLLoader(getClass().getResource(baseController.getFxmlName()));
+        fxmlLoader.setController(baseController);
+        Parent parent;
+        try {
+            parent = fxmlLoader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return;
+        }
+
+        Scene scene = new Scene(parent);
         stage.setScene(scene);
         stage.initStyle(StageStyle.UNDECORATED);
         this.stage = stage;
+
         stage.show();
-               
 
     }
 
@@ -44,3 +62,4 @@ public class B8ks_Main extends Application {
     }
     
 }
+

@@ -27,9 +27,9 @@ import javafx.stage.StageStyle;
  * @author sinda
  */
 public class B8ks_Main extends Application {
+    public static Stage stage = null;
     public FXMLLoader fxmlLoader ;
     ViewFactory v = new ViewFactory();
-    public static Stage stage = null;
    BaseController baseController = new LoginController(new ViewFactory(),"../views/sign_up.fxml");
     @Override
     public void start(Stage stage) throws IOException {
@@ -46,6 +46,8 @@ public class B8ks_Main extends Application {
 
         Scene scene = new Scene(parent);
         stage.setScene(scene);
+        stage.initStyle(StageStyle.UNDECORATED);
+        this.stage = stage;
 
         stage.show();
 

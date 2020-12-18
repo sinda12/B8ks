@@ -4,24 +4,46 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="695.0" prefWidth="1085.0" styleClass="parent" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="135.0" layoutY="117.0" text="nom" />
-      <Label layoutX="135.0" layoutY="148.0" text="prenom" />
-      <Label layoutX="135.0" layoutY="183.0" text="age" />
-      <Label layoutX="135.0" layoutY="217.0" text="mobile" />
-      <Label layoutX="135.0" layoutY="255.0" text="adresse" />
-      <Label layoutX="135.0" layoutY="289.0" text="email" />
-      <Label layoutX="135.0" layoutY="326.0" text="password" />
-      <TextField fx:id="idNom" layoutX="324.0" layoutY="113.0" />
-      <TextField fx:id="idPrenom" layoutX="324.0" layoutY="144.0" />
-      <TextField fx:id="idAge" layoutX="324.0" layoutY="179.0" />
-      <TextField fx:id="idMobil" layoutX="324.0" layoutY="213.0" />
-      <TextField fx:id="idAdresse" layoutX="324.0" layoutY="251.0" />
-      <TextField fx:id="idEmail" layoutX="324.0" layoutY="285.0" />
-      <TextField fx:id="idPasswordInscri" layoutX="324.0" layoutY="322.0" />
-      <Button fx:id="idInscriButton" layoutX="314.0" layoutY="361.0" mnemonicParsing="false" onAction="#register" text="s'inscrire" />
-      <Button fx:id="idCancelB" layoutX="215.0" layoutY="361.0" mnemonicParsing="false" onAction="#cancelIn" text="cancel" />
+      <Label layoutX="393.0" layoutY="165.0" text="Last name " textFill="#f8d1d1">
+         <font>
+            <Font name="Dubai Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="393.0" layoutY="196.0" text="First name " textFill="#f8d1d1">
+         <font>
+            <Font name="Dubai Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="393.0" layoutY="231.0" text="Age " textFill="#f8d1d1">
+         <font>
+            <Font name="Dubai Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="393.0" layoutY="265.0" text="Mobile" textFill="#f8d1d1">
+         <font>
+            <Font name="Dubai Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="393.0" layoutY="303.0" text="Adress" textFill="#f8d1d1">
+         <font>
+            <Font name="Dubai Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="393.0" layoutY="337.0" text="E-mail" textFill="#f8d1d1">
+         <font>
+            <Font name="Dubai Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="393.0" layoutY="374.0" text="Password" textFill="#f8d1d1">
+         <font>
+            <Font name="Dubai Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="idNom" layoutX="582.0" layoutY="159.0" />
+      <TextField fx:id="idPrenom" layoutX="582.0" layoutY="196.0" />
+      <TextField fx:id="idAge" layoutX="582.0" layoutY="231.0" />
+      <TextField fx:id="idMobil" layoutX="582.0" layoutY="265.0" />
+      <TextField fx:id="idAdresse" layoutX="582.0" layoutY="299.0" />
+      <TextField fx:id="idEmail" layoutX="582.0" layoutY="335.0" />
+      <TextField fx:id="idPasswordInscri" layoutX="582.0" layoutY="370.0" />
+      <Button fx:id="idInscriButton" layoutX="579.0" layoutY="476.0" mnemonicParsing="false" onAction="#register" prefHeight="26.0" prefWidth="174.0" style="-fx-background-radius: 100px;" text="sign in" />
+      <Button fx:id="idCancelB" layoutX="356.0" layoutY="476.0" mnemonicParsing="false" onAction="#cancelIn" prefHeight="26.0" prefWidth="174.0" style="-fx-background-radius: 100px;" text="cancel" />
    </children>
 </AnchorPane>

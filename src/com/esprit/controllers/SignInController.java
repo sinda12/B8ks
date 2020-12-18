@@ -54,14 +54,14 @@ public class SignInController extends BaseController {
 idNom.clear();idAge.clear();idMobil.clear();idEmail.clear();idPasswordInscri.clear();idAdresse.clear();idPrenom.clear();
 v.showAlertWithHeaderText("Ajout reussi !!");
 //v.showSignUp();
-cancelInscri(event);
+cancelIn(event);
 }
 else v.showAlertWithHeaderText("les champs sont vides");
     }
 
 
     @FXML
-    void cancelInscri(ActionEvent event) {
+    void cancelIn(ActionEvent event) {
         System.out.println("aaaaaaaaaasss");
         v.showSignUp(event);
 

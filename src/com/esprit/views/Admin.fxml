@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="695.0" prefWidth="1085.0" stylesheets="@Style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+   <children>
+      <HBox alignment="CENTER_RIGHT" layoutY="4.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="1086.0">
+         <children>
+            <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimize_stage" prefHeight="30.0" prefWidth="30.0" styleClass="min-btn">
+               <graphic>
+                  <FontAwesomeIcon glyphStyle="-fx-fill:Black" iconName="MINUS" size="1.3em" />
+               </graphic>
+            </Label>
+            <Label alignment="CENTER" layoutX="1066.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_app" prefHeight="30.0" prefWidth="30.0" styleClass="close-btn" stylesheets="@Style.css">
+               <graphic>
+                  <FontAwesomeIcon glyphStyle="-fx-fill:Black" iconName="CLOSE" size="1.3em" />
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="36.0" prefHeight="38.0" prefWidth="1086.0" />
+   </children>
+</AnchorPane>

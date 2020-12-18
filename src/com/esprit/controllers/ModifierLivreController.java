@@ -21,6 +21,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /**
@@ -41,11 +42,9 @@ public class ModifierLivreController implements Initializable {
     @FXML
     private TextField txtim;
     @FXML
-    private TextArea txtdesc;
+    private TextField txtdesc;
     @FXML
     private Button Annuler;
-    @FXML
-    private ImageView img;
     @FXML
     private ChoiceBox<String> catBox;
     private Button valider;
@@ -58,6 +57,8 @@ public class ModifierLivreController implements Initializable {
     private Button Charger;
     @FXML
     private Button Valider;
+    @FXML
+    private ImageView imgLivre;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         loadCat();

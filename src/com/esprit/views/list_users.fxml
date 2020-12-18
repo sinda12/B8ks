@@ -36,5 +36,6 @@
       <Label fx:id="idRole" layoutX="440.0" layoutY="298.0" prefHeight="17.0" prefWidth="59.0" text="nom" />
       <Button layoutX="400.0" layoutY="350.0" mnemonicParsing="false" onAction="#cancel" text="cancel" />
       <Button layoutX="463.0" layoutY="350.0" mnemonicParsing="false" onAction="#suppreimerUser" text="supprimer" />
+      <Button layoutX="507.0" layoutY="17.0" mnemonicParsing="false" onAction="#orders" text="Orders " />
    </children>
 </AnchorPane>

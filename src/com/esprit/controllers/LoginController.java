@@ -25,6 +25,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
 
 public class LoginController extends BaseController implements Initializable {
@@ -43,8 +45,16 @@ public class LoginController extends BaseController implements Initializable {
 
     @FXML
     private Button idBLogin;
+    
+    @FXML
+    private AnchorPane parent;
+    
+    private double xOffSet = 0;
+    private double yOffSet = 0;
 
 ServiceUser su = new ServiceUser();
+
+//B8ks_Main B8ks_Main=new B8ks_Main();
 
     @FXML
     public void signIn(ActionEvent ac) {
@@ -150,9 +160,28 @@ v.closeStage(s);
 
         return generatedString;
     }
+        private void makeStageDragable() {
+        parent.setOnMousePressed((MouseEvent event) -> {
+            xOffSet = event.getSceneX();
+            yOffSet = event.getSceneY();
+        });
+
+        parent.setOnMouseDragged((event) -> {
+            B8ks_Main.stage.setX(event.getScreenX() - xOffSet);
+            B8ks_Main.stage.setY(event.getScreenY() - yOffSet);
+            B8ks_Main.stage.setOpacity(0.8f);
+        });
+        parent.setOnDragDone((event) -> {
+            B8ks_Main.stage.setOpacity(1.0f);
+        });
+        parent.setOnMouseReleased((event) -> {
+            B8ks_Main.stage.setOpacity(1.0f);
+        });
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        makeStageDragable();
         String salt = BCrypt.gensalt();
         String pw_hash = BCrypt.hashpw("0101010101","$2a$10$TXaBV2h1b2jQlNlm6dU5we");
         String pw_hash0 = BCrypt.hashpw("0202020202", "$2a$10$TXaBV2h1b2jQlNlm6dU5we");
@@ -169,7 +198,20 @@ v.closeStage(s);
         System.out.println(BCrypt.checkpw("01010101",pw_hash1));
         System.out.println(BCrypt.checkpw("010101",pw_hash2));
         System.out.println(BCrypt.checkpw("0101",pw_hash3));
+        
 
+    }
+    
+
+        
+      @FXML
+    private void minimize_stage(MouseEvent event) {
+        B8ks_Main.stage.setIconified(true);
+    }
+
+    @FXML
+    private void close_app(MouseEvent event) {
+        System.exit(0);
     }
 
 

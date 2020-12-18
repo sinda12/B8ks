@@ -13,6 +13,7 @@ import java.util.ResourceBundle;
 
 import com.esprit.entities.Book;
 import com.esprit.services.CartService;
+import com.esprit.utils.validationSaisie;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -96,9 +97,9 @@ int user_id=UserCache.id;
         cs.addBookToCart(user_id, Integer.parseInt(book_i.getText()),b.getPrice());
         
         nb.setText(cs.nbPanier(user_id));
-            /*validationSaisie.notifConfirm("Success", "Book created !");
+            validationSaisie.notifConfirm("Success", "Title : "+b.getTitle()+ " ADDED TO YOUR CART !");
             
-            JOptionPane.showMessageDialog(null, "Book created !");*/
+            //JOptionPane.showMessageDialog(null, "Book created !");*/
       
     }
 }

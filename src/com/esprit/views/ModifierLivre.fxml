@@ -58,7 +58,7 @@
                   <Font size="23.0" />
                </font>
             </Label>
-            <Label fx:id="txtdesc" layoutX="498.0" layoutY="195.0" prefHeight="97.0" prefWidth="239.0" />
+            <TextField fx:id="txtdesc" layoutX="497.0" layoutY="195.0" prefHeight="77.0" prefWidth="149.0" />
          </children>
       </Pane>
       <Text layoutX="16.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Book" wrappingWidth="326.779296875">

@@ -49,6 +49,7 @@ public class ClaimController extends BaseController {
             alert.setHeaderText(null);
             alert.setContentText("Claim sent successfully !!");
             alert.showAndWait();
+            
         }else{
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("TextField is empty !!");
@@ -56,6 +57,7 @@ public class ClaimController extends BaseController {
             alert.setContentText("Please Write Something !!");
             alert.showAndWait();
              }
+        description.clear();
     }
     
 }

@@ -26,7 +26,7 @@ public class B8ks_Main extends Application {
     public static Stage stage = null;
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root =  FXMLLoader.load(getClass().getResource("Home.fxml"));
+        Parent root =  FXMLLoader.load(getClass().getResource("../views/Home.fxml"));
         Scene scene=new Scene(root);
         stage.setScene(scene);
         stage.initStyle(StageStyle.UNDECORATED);

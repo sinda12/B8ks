@@ -6,6 +6,7 @@ package com.esprit.controllers;/*
 
 
 
+import com.esprit.cache.UserCache;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -30,7 +31,7 @@ import javafx.scene.layout.AnchorPane;
  */
 public class Order1Controller implements Initializable {
     
-    int u_i=3;
+    int u_i=UserCache.id;
 
     @FXML
     private Label affiche_adresse_livraison;
@@ -139,7 +140,7 @@ public class Order1Controller implements Initializable {
     private void GoToPayment(ActionEvent event) throws IOException {
         if(Standard.isSelected()||rapide.isSelected()){
 
-        AnchorPane pane=FXMLLoader.load(getClass().getResource("Order2_Payment.fxml"));
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("../views/Order2_Payment.fxml"));
         C.getChildren().setAll(pane);} 
         else{
             alert.setTitle("information");
@@ -152,7 +153,7 @@ public class Order1Controller implements Initializable {
     @FXML
     private void UpdateAdress(ActionEvent event) throws IOException {
 
-        AnchorPane pane=FXMLLoader.load(getClass().getResource("Order1_updateAdress.fxml"));
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("../views/Order1_updateAdress.fxml"));
         C.getChildren().setAll(pane);} 
         
     

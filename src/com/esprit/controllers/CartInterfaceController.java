@@ -7,6 +7,7 @@ package com.esprit.controllers;/*
 
 
 
+import com.esprit.cache.UserCache;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -43,7 +44,7 @@ import javafx.stage.Stage;
  */
 public class CartInterfaceController extends HomeController implements Initializable {
     
-     int u_i=3;
+     int u_i=UserCache.id;
     
     
  @FXML
@@ -107,7 +108,7 @@ public class CartInterfaceController extends HomeController implements Initializ
         CartTable orderSelected=table.getSelectionModel().getSelectedItem();
         cs.supprimerCController(orderSelected);
         UpdateTable();
-        nb.setText(cs.nbPanier(user_id));
+        nb.setText(cs.nbPanier(u_i));
     }
     
     
@@ -137,7 +138,7 @@ public class CartInterfaceController extends HomeController implements Initializ
             UpdateTable();
         }
         this.prixTotal.setText(cs.prixTotale(u_i));
-        nb.setText(cs.nbPanier(user_id));
+        nb.setText(cs.nbPanier(u_i));
       
     }
 
@@ -157,7 +158,7 @@ public class CartInterfaceController extends HomeController implements Initializ
         
         table.getItems().addAll(ab);
         this.prixTotal.setText(cs.prixTotale(u_i));
-        nb.setText(cs.nbPanier(user_id));
+        nb.setText(cs.nbPanier(u_i));
     }
     
 
@@ -165,7 +166,7 @@ public class CartInterfaceController extends HomeController implements Initializ
     void goToOrder(ActionEvent event) throws IOException {
         if(Double.parseDouble(prixTotal.getText())>1){
             
-        AnchorPane pane=FXMLLoader.load(getClass().getResource("Order1.fxml"));
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("../views/Order1.fxml"));
         C.getChildren().setAll(pane); }
         else{
             alert.setTitle("information");
@@ -222,13 +223,13 @@ public class CartInterfaceController extends HomeController implements Initializ
     @FXML
     private void GoToArchive(ActionEvent event) throws IOException {
       
-        AnchorPane pane=FXMLLoader.load(getClass().getResource("Archive_orders.fxml"));
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("../views/Archive_orders.fxml"));
         C.getChildren().setAll(pane);
     }
 
     @FXML
     private void GoToOrders(ActionEvent event) throws IOException {
-        AnchorPane pane=FXMLLoader.load(getClass().getResource("Orders.fxml"));
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("../views/Orders.fxml"));
         C.getChildren().setAll(pane);
         
 

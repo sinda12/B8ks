@@ -6,6 +6,7 @@ package com.esprit.controllers;/*
 
 
 
+import com.esprit.cache.UserCache;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -39,7 +40,7 @@ public class Order1_updateAdressController implements Initializable {
     private Button save1;
     
     
-    int user_id=3;
+    int user_id=UserCache.id;
     @FXML
     private TextField mobile;
     @FXML
@@ -59,7 +60,7 @@ public class Order1_updateAdressController implements Initializable {
     private void GoToOrder1(ActionEvent event) throws IOException {
         
 
-        AnchorPane pane=FXMLLoader.load(getClass().getResource("Order1.fxml"));
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("../views/Order1.fxml"));
         C.getChildren().setAll(pane); 
     }
 
@@ -69,7 +70,7 @@ public class Order1_updateAdressController implements Initializable {
         ServiceOrder so=new ServiceOrder();
         so.modifierClient(user_id,adresse.getText(),Integer.parseInt(mobile.getText()));
         
-        AnchorPane pane=FXMLLoader.load(getClass().getResource("Order1.fxml"));
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("../views/Order1.fxml"));
         C.getChildren().setAll(pane);}
         else if(("".equals(mobile.getText()))||("".equals(adresse.getText()))){
             alert.setTitle("information");

@@ -6,6 +6,7 @@ package com.esprit.controllers;/*
 
 
 
+import com.esprit.cache.UserCache;
 import java.io.IOException;
 import java.net.URL;
 import java.util.HashMap;
@@ -37,7 +38,7 @@ import javax.swing.JOptionPane;
  */
 public class Order2_PaymentController extends HomeController implements Initializable {
     
-    int u_i=3;
+    int u_i=UserCache.id;
 
     @FXML
     private TextField nCart;
@@ -120,7 +121,7 @@ public class Order2_PaymentController extends HomeController implements Initiali
             
             
             
-        AnchorPane pane=FXMLLoader.load(getClass().getResource("Order3_Resume.fxml"));
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("../views/Order3_Resume.fxml"));
         C.getChildren().setAll(pane);   
             
 

@@ -7,6 +7,7 @@ package com.esprit.controllers;/*
 
 
 
+import com.esprit.cache.UserCache;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -28,7 +29,7 @@ import javafx.stage.Stage;
  * @author gar4a
  */
 public class Infos_livresController extends HomeController implements Initializable {
-int user_id=3;
+int user_id=UserCache.id;
     @FXML
     private Label txttitre;
     @FXML

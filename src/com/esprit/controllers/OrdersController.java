@@ -7,6 +7,7 @@ package com.esprit.controllers;/*
 
 
 
+import com.esprit.cache.UserCache;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -38,7 +39,7 @@ import javafx.stage.Stage;
  */
 public class OrdersController implements Initializable {
     
-    int u_i=3;
+    int u_i=UserCache.id;
 
     @FXML
     private Button panier;
@@ -83,7 +84,7 @@ public class OrdersController implements Initializable {
 
     @FXML
     private void GoToCart(ActionEvent event) throws IOException {
-        AnchorPane pane=FXMLLoader.load(getClass().getResource("CartInterface.fxml"));
+        AnchorPane pane=FXMLLoader.load(getClass().getResource("../views/CartInterface.fxml"));
         C.getChildren().setAll(pane);
     }
     

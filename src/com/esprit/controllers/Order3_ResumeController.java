@@ -6,6 +6,7 @@ package com.esprit.controllers;/*
 
 
 
+import com.esprit.cache.UserCache;
 import com.esprit.services.CartService;
 import com.esprit.services.ServiceOrder;
 import com.itextpdf.text.Document;
@@ -30,7 +31,7 @@ import javafx.scene.layout.AnchorPane;
  */
 public class Order3_ResumeController implements Initializable {
     
-    int u_i=3;
+    int u_i=UserCache.id;
     
     ServiceOrder so=new ServiceOrder();
     CartService cs = new CartService();

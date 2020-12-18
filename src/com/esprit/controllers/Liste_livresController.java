@@ -6,6 +6,7 @@ package com.esprit.controllers;/*
 
 
 
+import com.esprit.cache.UserCache;
 import com.esprit.entities.Book;
 import com.esprit.services.ServicesBook;
 import java.io.IOException;
@@ -38,7 +39,7 @@ import javafx.stage.Stage;
  * @author gar4a
  */
 public class Liste_livresController implements Initializable {
-int user_id=3;
+int user_id=UserCache.id;
     @FXML
     private TableView<Book> TabBook;
     @FXML
@@ -87,8 +88,9 @@ int user_id=3;
         return list;
     }    
     public void sendData(Book b) throws IOException{
+        
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("Infos_livres.fxml"));
+        loader.setLocation(getClass().getResource("../views/Infos_livres.fxml"));
         Parent parent = loader.load();
         Infos_livresController c = loader.getController();
         c.setB(b);

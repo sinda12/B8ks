@@ -2,16 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a57e027-14cc-4d17-924e-aebb8971975e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/SignInController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/SignInController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/com/esprit/services/ServiceUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/services/ServiceUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/ViewFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/ViewFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/ClaimController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/ClaimController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifest.mf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/b8ks_s/B8ks_s.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Archive_ordersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Archive_ordersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/CartInterfaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/CartInterfaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/FxmlLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/FxmlLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Infos_livresController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Infos_livresController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Liste_livresController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Liste_livresController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/ViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Order1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Order1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Order1_updateAdressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Order1_updateAdressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Order2_PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Order2_PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Order3_ResumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Order3_ResumeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/OrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/services/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/services/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/utils/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/utils/DataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Admin_Order_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Admin_Order_view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Aff_modi_supp_cat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Aff_modi_supp_cat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Aff_modi_supp_livre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Aff_modi_supp_livre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Ajouter_cat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Ajouter_cat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Archive_orders.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Archive_orders.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Category.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Category.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/CategoryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/CategoryView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Claim.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Claim.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/CreateReview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/CreateReview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/DeleteBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/DeleteBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Infos_livres.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Infos_livres.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/InputValidation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/InputValidation.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Liste_livres.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Liste_livres.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/ModifierCat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/ModifierCat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/ModifierLivre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/ModifierLivre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Order1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Order1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Order1_updateAdress.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Order1_updateAdress.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Order2_Payment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Order2_Payment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Order3_Resume.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Order3_Resume.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/ShowClaims.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/ShowClaims.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/ShowReviews.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/ShowReviews.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/UpdateBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/UpdateBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/UpdateReview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/UpdateReview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/ajouter_livre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/ajouter_livre.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/esprit/views/ViewFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="172">
-              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+              <caret line="101" selection-start-line="101" selection-end-line="101" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/esprit/controllers/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="138" column="25" selection-start-line="138" selection-start-column="25" selection-end-line="138" selection-end-column="25" />
+            <state relative-caret-position="340">
+              <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,9 +113,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/esprit/controllers/CartInterfaceController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/esprit/controllers/ClaimController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="172">
               <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
             </state>
           </provider>
@@ -99,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/com/esprit/controllers/Aff_modi_supp_catController.java" />
         <option value="$PROJECT_DIR$/src/com/esprit/controllers/Aff_modi_supp_livreController.java" />
         <option value="$PROJECT_DIR$/src/com/esprit/controllers/Archive_ordersController.java" />
-        <option value="$PROJECT_DIR$/src/com/esprit/controllers/CartInterfaceController.java" />
         <option value="$PROJECT_DIR$/src/com/esprit/entities/UsedBook.java" />
         <option value="$PROJECT_DIR$/src/com/esprit/entities/Category.java" />
         <option value="$PROJECT_DIR$/src/com/esprit/services/crudcategory.java" />
@@ -139,10 +187,11 @@
         <option value="$PROJECT_DIR$/src/com/esprit/controllers/SignInController.java" />
         <option value="$PROJECT_DIR$/src/com/esprit/services/ServiceUser.java" />
         <option value="$PROJECT_DIR$/src/com/esprit/controllers/Liste_livresController.java" />
-        <option value="$PROJECT_DIR$/src/com/esprit/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/com/esprit/views/ViewFactory.java" />
         <option value="$PROJECT_DIR$/src/com/esprit/controllers/HomeController.java" />
         <option value="$PROJECT_DIR$/src/com/esprit/controllers/ClaimController.java" />
+        <option value="$PROJECT_DIR$/src/com/esprit/controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/com/esprit/controllers/CartInterfaceController.java" />
       </list>
     </option>
   </component>
@@ -181,6 +230,13 @@
               <item name="B8ks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="esprit" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="B8ks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="B8ks" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="esprit" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -207,7 +263,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608251810928" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608252272093" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mysql-connector-java-5.1.49.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -296,7 +352,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608152416304</updated>
       <workItem from="1608152429989" duration="7466000" />
-      <workItem from="1608198698452" duration="47219000" />
+      <workItem from="1608198698452" duration="47671000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;commit1&quot;">
       <created>1608199064610</created>
@@ -312,14 +368,22 @@
       <option name="project" value="LOCAL" />
       <updated>1608199178933</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;commit3&quot;">
+      <created>1608251866203</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608251866203</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54685000" />
+    <option name="totallyTimeSpent" value="55137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -330,7 +394,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18003273" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4729951" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -359,7 +423,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;commit1&quot;" />
     <MESSAGE value="&quot;commit2&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;commit2&quot;" />
+    <MESSAGE value="&quot;commit3&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;commit3&quot;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/esprit/services/crudcategory.java">
@@ -547,16 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/esprit/controllers/CartInterfaceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="100" column="28" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -772,17 +827,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/esprit/views/ViewFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/esprit/controllers/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="138" column="25" selection-start-line="138" selection-start-column="25" selection-end-line="138" selection-end-column="25" />
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -791,8 +836,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/esprit/controllers/ClaimController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="172">
           <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/esprit/controllers/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/esprit/controllers/CartInterfaceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

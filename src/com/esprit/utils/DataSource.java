@@ -10,7 +10,7 @@ public class DataSource {
     private Connection cnx ;
 
 
-    private final String URL = "jdbc:mysql://localhost:3306/EbookDb" ;
+    private final String URL = "jdbc:mysql://localhost:3306/b8ks" ;
     private final String USERNAME = "root";
     private final String PASSWORD = "" ;
 

@@ -36,7 +36,7 @@ import javafx.stage.Stage;
  */
 public class HomeController implements Initializable {
     
-    int user_id=3;
+    int user_id=UserCache.id;
     ViewFactory v = new ViewFactory();
 
     @FXML

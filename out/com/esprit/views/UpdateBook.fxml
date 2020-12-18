@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="901.0" prefWidth="1257.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.esprit.views.UpdateBookController">
+<AnchorPane id="AnchorPane" prefHeight="901.0" prefWidth="1257.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.esprit.controllers.UpdateBookController">
    <children>
       <Label layoutX="70.0" layoutY="60.0" prefHeight="49.0" prefWidth="85.0" text="Book ID" />
       <Label layoutX="190.0" layoutY="66.0" prefHeight="37.0" prefWidth="106.0" />

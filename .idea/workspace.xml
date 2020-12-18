@@ -2,53 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a57e027-14cc-4d17-924e-aebb8971975e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifest.mf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbproject/project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/b8ks_s/B8ks_s.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Archive_ordersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Archive_ordersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/CartInterfaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/CartInterfaceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/FxmlLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/FxmlLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Infos_livresController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Infos_livresController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Liste_livresController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Liste_livresController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Order1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Order1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Order1_updateAdressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Order1_updateAdressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Order2_PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Order2_PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/Order3_ResumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/Order3_ResumeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/controllers/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/controllers/OrdersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/services/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/services/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/utils/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/utils/DataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Admin_Order_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Admin_Order_view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Aff_modi_supp_cat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Aff_modi_supp_cat.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Aff_modi_supp_livre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Aff_modi_supp_livre.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Ajouter_cat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Ajouter_cat.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Archive_orders.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Archive_orders.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Category.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Category.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/CategoryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/CategoryView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Claim.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Claim.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/CreateReview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/CreateReview.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/DeleteBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/DeleteBook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Infos_livres.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Infos_livres.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/InputValidation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/InputValidation.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Liste_livres.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Liste_livres.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/ModifierCat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/ModifierCat.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/ModifierLivre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/ModifierLivre.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Order1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Order1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Order1_updateAdress.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Order1_updateAdress.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Order2_Payment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Order2_Payment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/Order3_Resume.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/Order3_Resume.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/ShowClaims.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/ShowClaims.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/ShowReviews.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/ShowReviews.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/UpdateBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/UpdateBook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/UpdateReview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/UpdateReview.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esprit/views/ajouter_livre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/esprit/views/ajouter_livre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/Archive_ordersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/Archive_ordersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/CartInterfaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/CartInterfaceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/ClaimController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/ClaimController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/FxmlLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/FxmlLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/Infos_livresController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/Infos_livresController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/Liste_livresController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/Liste_livresController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/Order1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/Order1Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/Order1_updateAdressController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/Order1_updateAdressController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/Order2_PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/Order2_PaymentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/Order3_ResumeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/Order3_ResumeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/controllers/OrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/controllers/OrdersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/services/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/services/CartService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/utils/DataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/utils/DataSource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/Admin_Order_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/Admin_Order_view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/Aff_modi_supp_cat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/Aff_modi_supp_cat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/Aff_modi_supp_livre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/Aff_modi_supp_livre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/Ajouter_cat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/Ajouter_cat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/Archive_orders.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/Archive_orders.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/Category.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/Category.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/CategoryView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/CategoryView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/Claim.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/Claim.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/CreateReview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/CreateReview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/DeleteBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/DeleteBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/Infos_livres.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/Infos_livres.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/InputValidation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/InputValidation.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/Liste_livres.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/Liste_livres.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/ModifierCat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/ModifierCat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/ModifierLivre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/ModifierLivre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/Order1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/Order1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/Order1_updateAdress.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/Order1_updateAdress.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/Order2_Payment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/Order2_Payment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/Order3_Resume.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/Order3_Resume.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/ShowClaims.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/ShowClaims.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/ShowReviews.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/ShowReviews.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/UpdateBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/UpdateBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/UpdateReview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/UpdateReview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/esprit/views/ajouter_livre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/com/esprit/views/ajouter_livre.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +116,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/esprit/controllers/CartInterfaceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="91">
               <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -214,45 +215,6 @@
               <item name="B8ks" type="b2602c69:ProjectViewProjectNode" />
               <item name="B8ks" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="B8ks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="B8ks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="B8ks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="B8ks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="esprit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="B8ks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="B8ks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="esprit" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="B8ks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="B8ks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="esprit" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="B8ks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="B8ks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="esprit" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="B8ks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="B8ks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="esprit" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -263,7 +225,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608252272093" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608252612730" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mysql-connector-java-5.1.49.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -352,7 +314,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608152416304</updated>
       <workItem from="1608152429989" duration="7466000" />
-      <workItem from="1608198698452" duration="47671000" />
+      <workItem from="1608198698452" duration="47911000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;commit1&quot;">
       <created>1608199064610</created>
@@ -375,17 +337,23 @@
       <option name="project" value="LOCAL" />
       <updated>1608251866203</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="merge4">
+      <created>1608252369898</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608252369898</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55137000" />
+    <option name="totallyTimeSpent" value="55377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -394,7 +362,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4729951" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4729951" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -424,7 +392,8 @@
     <MESSAGE value="&quot;commit1&quot;" />
     <MESSAGE value="&quot;commit2&quot;" />
     <MESSAGE value="&quot;commit3&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;commit3&quot;" />
+    <MESSAGE value="merge4" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge4" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/esprit/services/crudcategory.java">
@@ -853,7 +822,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/esprit/controllers/CartInterfaceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="91">
           <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />

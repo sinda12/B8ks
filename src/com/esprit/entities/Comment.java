@@ -9,6 +9,12 @@ public class Comment {
     public Comment() {
     }
 
+    public Comment(String text, int user_id, int blog_id) {
+        this.text = text;
+        this.user_id = user_id;
+        this.blog_id = blog_id;
+    }
+
     public Comment(int id, String text, int user_id, int blog_id) {
         this.id = id;
         this.text = text;

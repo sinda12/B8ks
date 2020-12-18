@@ -5,6 +5,7 @@ import com.esprit.entities.BlogCache;
 import com.esprit.entities.User;
 import com.esprit.entities.UserCache;
 import com.esprit.services.BlogService;
+import com.esprit.services.SendMail;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -20,6 +21,8 @@ import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class CreateBlogController  implements Initializable {
     @FXML
@@ -54,7 +57,7 @@ public class CreateBlogController  implements Initializable {
         UserCache.nom="beer";
         UserCache.date=formatter.format(date)+"";
         b.setUser(s);
-//        System.out.println("hedhiii ell dataaeee"+b.getDate());
+
 
 
          try {
@@ -65,7 +68,12 @@ public class CreateBlogController  implements Initializable {
          } catch (SQLException exception) {
         exception.printStackTrace();
     }
-
+        SendMail sm = new SendMail();
+        try {
+            sm.envoiMail("abir.haatira@gmail.com", "New Blog has been added");
+        } catch (Exception ex) {
+            Logger.getLogger(CreateBlogController.class.getName()).log(Level.SEVERE, null, ex);
+        }
 }
 
     public void cancel(ActionEvent actionEvent) {

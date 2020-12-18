@@ -6,6 +6,7 @@ import com.esprit.entities.UserCache;
 import com.esprit.services.BlogService;
 import com.esprit.services.CommentService;
 import com.esprit.utils.Draft;
+import com.esprit.utils.NotificationAPI;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -50,7 +51,8 @@ public class BlogController  implements Initializable {
 
     @FXML
     private Label dislikes_number_id;
-
+    @FXML
+    private Label commentslabel;
     @FXML
     private Font x11;
 
@@ -123,7 +125,9 @@ public class BlogController  implements Initializable {
         CommentService commentService = new CommentService();
         System.out.println(Draft.blog.getId());
         try {
-            commentService.create(new Comment(0, commentInput.getText(),  UserCache.id, Draft.blog.getId()));
+            commentService.create(new Comment(commentInput.getText(),9,62));
+            commentslabel.setText(commentInput.getText());
+            NotificationAPI.notifInfo("New Comment added ", commentInput.getText());
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

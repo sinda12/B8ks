@@ -104,10 +104,12 @@ public void closeStage(Stage stageToClose) {
         initializeStage(b);
     }*/
 
-//    public void showClaim(){
-//        BaseController b = new ClaimController(this,"Claim.fxml");
-//        initializeStage(b);
-//    }
+    public Pane showClaim(ActionEvent ac) throws IOException {
+        BaseController b = new ClaimController(this,"Claim.fxml");
+        fxmlLoader = new FXMLLoader(getClass().getResource(b.getFxmlName()));
+        fxmlLoader.setController(b);
+        return  fxmlLoader.load();
+    }
 //
 //    public void showReview(){
 //        BaseController b = new CreateReviewController(this,"CreateReview.fxml");

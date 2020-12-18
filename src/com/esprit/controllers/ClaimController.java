@@ -5,6 +5,7 @@
  */
 package com.esprit.controllers;
 
+import com.esprit.cache.UserCache;
 import com.esprit.entities.Claim;
 import com.esprit.entities.User;
 
@@ -41,7 +42,7 @@ public class ClaimController extends BaseController {
     @FXML
     private void send(ActionEvent event) {
         if (description.getText().trim().length() > 0){
-               u.setId(21);
+               u.setId(UserCache.id);
         sc.create(new Claim(description.getText()),u);
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Claim sent !!");

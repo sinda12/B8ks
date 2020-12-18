@@ -55,10 +55,6 @@ ServiceUser su = new ServiceUser();
         if (test()) {
             User s = su.login(this.idEmail.getText(), idPassword.getText());
             if (s != null && !s.getAdmin()) {
-                v.showMenu(ac);
-                cancel();
-                System.out.println(s);
-
 
                 UserCache.id=s.getId();
                 UserCache.nom=s.getNom();
@@ -69,6 +65,13 @@ ServiceUser su = new ServiceUser();
                 UserCache.password=idPassword.getText();
                 System.out.println(BCrypt.hashpw(s.getPassword(), Tools.BCRYPT_SALT));
                 UserCache.prenom=s.getPrenom();
+                System.out.println("user=== "+s);
+                v.showMenu(ac);
+                cancel();
+
+                System.out.println("user22=== "+s);
+
+
 
 
 

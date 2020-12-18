@@ -134,7 +134,10 @@ public class HomeController implements Initializable {
     }
 
     @FXML
-    private void Complaint(ActionEvent event) {
+    private void Complaint(ActionEvent event) throws IOException {
+
+        Pane view = v.showClaim(event);
+        mainPane.setCenter(view);
     }
 
     @FXML

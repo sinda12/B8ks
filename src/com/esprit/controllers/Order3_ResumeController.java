@@ -9,6 +9,7 @@ package com.esprit.controllers;/*
 import com.esprit.cache.UserCache;
 import com.esprit.services.CartService;
 import com.esprit.services.ServiceOrder;
+import com.esprit.utils.validationSaisie;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Paragraph;
@@ -71,7 +72,7 @@ public class Order3_ResumeController implements Initializable {
             document.open();
             document.add(new Paragraph("******************your order has been processed********************** \n \n "+"Your Details are :\n"+so.UserDetails(u_i)+"You payed : "+amount+"dt"));
             document.close();
-            
+            validationSaisie.notifConfirm("Success", "Your fracture has been sent !");
             
         }
         catch(  DocumentException | FileNotFoundException e){

@@ -292,8 +292,11 @@ public void supprimerC(Cart c) {
        public void addToArchive(int user_id) {
        
          try {
-              String req="INSERT INTO archive(cart_id,user_id,quantity,book_id,price,totalprice) select * from cart where user_id="+user_id;
+             String req="INSERT INTO archive(cart_id,user_id,quantity,book_id,price,totalprice) select distinct cart_id,user_id,sum(quantity),book_id,price,totalprice from cart where user_id=? GROUP BY book_id"; 
+             //String req="INSERT INTO archive(cart_id,user_id,quantity,book_id,price,totalprice) select * from cart where user_id="+user_id;
+              //String req="INSERT INTO archive(cart_id,user_id,quantity,book_id,price,totalprice) select distinct cart_id,user_id,sum(quantity),book_id,price,totalprice from cart where user_id="+user_id+"group by book_id";
             PreparedStatement pst = cnx.prepareStatement(req);
+            pst.setInt(1,user_id);
             pst.executeUpdate();
             System.out.println("Archive ajoutée");
           } catch (SQLException ex) {

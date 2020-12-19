@@ -80,7 +80,7 @@ public class HomeController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
          FxmlLoader o=new FxmlLoader();
          Pane view=o.getPage("../views/home_page");
-         mainPane.setCenter(view);
+        mainPane.setCenter(view);
         makeStageDragable();
         nbPanier.setText(cs.nbPanier(user_id));
         nb=nbPanier;

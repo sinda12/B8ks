@@ -8,34 +8,46 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.Admin_Order_viewController">
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="1062.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.Admin_Order_viewController">
    <children>
-      <TableView fx:id="table" layoutX="305.0" layoutY="66.0" onMouseClicked="#GetData" prefHeight="326.0" prefWidth="454.0" style="-fx-background-color: FFCA48; -fx-border-radius: 8em;">
+      <TableView fx:id="table" layoutX="327.0" layoutY="96.0" onMouseClicked="#GetData" prefHeight="466.0" prefWidth="690.0" style="-fx-background-color: black;">
          <columns>
-            <TableColumn fx:id="order_id" prefWidth="60.79998779296875" style="-fx-background-radius: 2em;" text="order_id" />
-            <TableColumn fx:id="cart_id" prefWidth="65.5999755859375" style="-fx-background-radius: 2em;" text="cart_id" />
-            <TableColumn fx:id="user_id" prefWidth="70.4000244140625" style="-fx-background-radius: 2em;" text="user_id" />
-            <TableColumn fx:id="status" prefWidth="171.20004272460938" style="-fx-background-radius: 2em;" text="status" />
-            <TableColumn fx:id="totalPrice" prefWidth="84.7999267578125" style="-fx-background-radius: 2em;" text="totalPrice" />
+            <TableColumn fx:id="order_id" prefWidth="89.60000610351562" text="order_id" />
+            <TableColumn fx:id="cart_id" prefWidth="108.0" text="cart_id" />
+            <TableColumn fx:id="user_id" prefWidth="133.5999755859375" text="user_id" />
+            <TableColumn fx:id="status" prefWidth="200.7999267578125" text="status" />
+            <TableColumn fx:id="totalPrice" prefWidth="162.4000244140625" text="totalPrice" />
          </columns>
       </TableView>
-      <Button fx:id="button_find_byID" layoutX="502.0" layoutY="14.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: orange; -fx-background-radius: 2em;" text="search by user ID" />
-      <Button fx:id="supprimer" layoutX="160.0" layoutY="411.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: orange; -fx-background-radius: 2em;" text="Delete" />
-      <Button layoutX="36.0" layoutY="410.0" mnemonicParsing="false" onAction="#updateAdmin" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: orange; -fx-background-radius: 2em;" text="Update" />
-      <TextField fx:id="find_by_ID" layoutX="286.0" layoutY="14.0" prefHeight="26.0" prefWidth="205.0" style="-fx-background-radius: 4em;" />
-      <TextField fx:id="tp" layoutX="106.0" layoutY="276.0" style="-fx-background-radius: 2em;" />
-      <TextField fx:id="s" layoutX="106.0" layoutY="218.0" style="-fx-background-radius: 2em;" />
-      <Label layoutX="36.0" layoutY="284.0" text="totalOrice" />
-      <Label layoutX="36.0" layoutY="226.0" text="Status" />
-      <Label layoutX="42.0" layoutY="172.0" text="User ID" />
-      <Label layoutX="43.0" layoutY="123.0" text="Cart ID" />
-      <Label layoutX="66.0" layoutY="18.0" text="HELLO ADMIN " textFill="#8f3131">
+      <Button fx:id="button_find_byID" layoutX="620.0" layoutY="32.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="166.0" style="-fx-background-radius: 2em;" text="search by user ID" />
+      <Button fx:id="supprimer" layoutX="219.0" layoutY="483.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="75.0" style="-fx-background-radius: 2em;" text="Delete" />
+      <Button layoutX="95.0" layoutY="482.0" mnemonicParsing="false" onAction="#updateAdmin" prefHeight="26.0" prefWidth="82.0" style="-fx-background-radius: 2em;" text="Update" />
+      <TextField fx:id="find_by_ID" layoutX="404.0" layoutY="32.0" prefHeight="26.0" prefWidth="205.0" style="-fx-background-radius: 4em;" />
+      <TextField fx:id="tp" layoutX="140.0" layoutY="347.0" style="-fx-background-radius: 2em;" />
+      <TextField fx:id="s" layoutX="140.0" layoutY="289.0" style="-fx-background-radius: 2em;" />
+      <Label layoutX="70.0" layoutY="355.0" text="totalOrice" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="Dubai Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="70.0" layoutY="297.0" text="Status" textFill="WHITE">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="66.0" layoutY="243.0" text="User ID" textFill="WHITE">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="67.0" layoutY="194.0" text="Cart ID" textFill="WHITE">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font></Label>
+      <Label layoutX="66.0" layoutY="18.0" text="HELLO ADMIN " textFill="#640032">
+         <font>
+            <Font name="System Bold" size="21.0" />
          </font>
       </Label>
-      <Label fx:id="u" layoutX="130.0" layoutY="172.0" text=" " />
-      <Label fx:id="cart" layoutX="130.0" layoutY="123.0" text="  " />
-      <Button fx:id="showAll" layoutX="681.0" layoutY="14.0" mnemonicParsing="false" onAction="#ShowAll" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: orange; -fx-background-radius: 2em;" text="Show ALL" />
+      <Label fx:id="u" layoutX="164.0" layoutY="243.0" text=" " />
+      <Label fx:id="cart" layoutX="164.0" layoutY="194.0" text="  " />
+      <Button fx:id="showAll" layoutX="799.0" layoutY="32.0" mnemonicParsing="false" onAction="#ShowAll" prefHeight="26.0" prefWidth="94.0" style="-fx-background-radius: 2em;" text="Show ALL" />
    </children>
 </AnchorPane>

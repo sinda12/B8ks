@@ -64,7 +64,7 @@ public void showSignIn(ActionEvent ac)
         BaseController b = new MenuController(this, "../views/menu.fxml");
         fxmlLoader = new FXMLLoader(getClass().getResource(b.getFxmlName()));
         fxmlLoader.setController(b);
-            return  fxmlLoader.load();
+        return  fxmlLoader.load();
     }
 
 
@@ -76,10 +76,14 @@ public void showMenu(ActionEvent ac) throws IOException {
     window.show();
 }
 
-public void showListUser(ActionEvent ac)
+public Pane showListUser(ActionEvent ac) throws IOException
     {
         BaseController b = new UsersController(this,"list_users.fxml");
-        initializeStage(b,ac);
+        //initializeStage(b,ac);
+         fxmlLoader = new FXMLLoader(getClass().getResource(b.getFxmlName()));
+        fxmlLoader.setController(b);
+            return  fxmlLoader.load();
+        
     }
 
 public void closeStage(Stage stageToClose) {

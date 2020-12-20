@@ -5,6 +5,8 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -12,17 +14,17 @@
    <children>
       <TableView fx:id="table" layoutX="327.0" layoutY="96.0" onMouseClicked="#GetData" prefHeight="466.0" prefWidth="690.0">
          <columns>
-            <TableColumn fx:id="order_id" prefWidth="89.60000610351562" text="order_id" />
-            <TableColumn fx:id="cart_id" prefWidth="108.0" text="cart_id" />
-            <TableColumn fx:id="user_id" prefWidth="133.5999755859375" text="user_id" />
-            <TableColumn fx:id="status" prefWidth="200.7999267578125" text="status" />
-            <TableColumn fx:id="totalPrice" prefWidth="162.4000244140625" text="totalPrice" />
+            <TableColumn fx:id="order_id" prefWidth="89.60000610351562" text="Order Id" />
+            <TableColumn fx:id="cart_id" prefWidth="108.0" text="Cart Id" />
+            <TableColumn fx:id="user_id" prefWidth="133.5999755859375" text="User Id" />
+            <TableColumn fx:id="status" prefWidth="200.7999267578125" text="Status" />
+            <TableColumn fx:id="totalPrice" prefWidth="162.4000244140625" text="Total Price" />
          </columns>
       </TableView>
-      <Button fx:id="button_find_byID" layoutX="620.0" layoutY="32.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="166.0" style="-fx-background-radius: 2em;" text="search by user ID" />
+      <Button fx:id="button_find_byID" layoutX="620.0" layoutY="32.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="121.0" style="-fx-background-radius: 2em;" text="Search " />
       <Button fx:id="supprimer" layoutX="219.0" layoutY="483.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="75.0" style="-fx-background-radius: 2em;" text="Delete" />
       <Button layoutX="95.0" layoutY="482.0" mnemonicParsing="false" onAction="#updateAdmin" prefHeight="26.0" prefWidth="82.0" style="-fx-background-radius: 2em;" text="Update" />
-      <TextField fx:id="find_by_ID" layoutX="404.0" layoutY="32.0" prefHeight="26.0" prefWidth="205.0" style="-fx-background-radius: 4em;" />
+      <TextField fx:id="find_by_ID" layoutX="300.0" layoutY="32.0" prefHeight="26.0" prefWidth="310.0" promptText="Search by order id,cart id or user id" style="-fx-background-radius: 4em;" />
       <TextField fx:id="tp" layoutX="140.0" layoutY="347.0" style="-fx-background-radius: 2em;" />
       <TextField fx:id="s" layoutX="140.0" layoutY="289.0" style="-fx-background-radius: 2em;" />
       <Label layoutX="70.0" layoutY="355.0" text="totalOrice" textFill="WHITE">
@@ -48,6 +50,11 @@
       </Label>
       <Label fx:id="u" layoutX="164.0" layoutY="243.0" text=" " />
       <Label fx:id="cart" layoutX="164.0" layoutY="194.0" text="  " />
-      <Button fx:id="showAll" layoutX="799.0" layoutY="32.0" mnemonicParsing="false" onAction="#ShowAll" prefHeight="26.0" prefWidth="94.0" style="-fx-background-radius: 2em;" text="Show ALL" />
+      <Button fx:id="showAll" layoutX="771.0" layoutY="32.0" mnemonicParsing="false" onAction="#ShowAll" prefHeight="26.0" prefWidth="94.0" style="-fx-background-radius: 2em;" text="Show ALL" />
+      <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="574.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/icons8_Search_52px.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

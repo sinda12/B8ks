@@ -44,7 +44,7 @@ public class ServiceOrder{
     public void supprimerO(Order o) {
        
          try {
-             //int id=o.getOrder_id();
+             
               String req="DELETE from bookorder where order_id="+ o.getOrder_id();
           cnx.createStatement().executeUpdate(req);
             System.out.println("Commande supprimée");
@@ -79,7 +79,7 @@ public class ServiceOrder{
         List<Order> list = new ArrayList<>();
          try {
        
-             { String req="SELECT * from bookorder where user_id="+user_id;
+             { String req="SELECT * from bookorder where user_id="+user_id+" or cart_id="+user_id+" or order_id="+user_id;
             java.sql.Statement st = cnx.createStatement();
             ResultSet res = st.executeQuery(req);
             while (res.next()){

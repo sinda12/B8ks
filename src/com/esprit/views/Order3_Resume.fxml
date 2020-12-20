@@ -16,7 +16,7 @@
                   <Insets />
                </opaqueInsets>
             </Label>
-            <Label fx:id="Resume_button" alignment="CENTER" layoutX="553.0" layoutY="24.0" prefHeight="18.0" prefWidth="82.0" style="-fx-background-color: #a9227c; -fx-background-radius: 2em;" text="RESUME" textAlignment="CENTER" textFill="#242424">
+            <Label fx:id="Resume_button" alignment="CENTER" layoutX="553.0" layoutY="24.0" prefHeight="18.0" prefWidth="91.0" style="-fx-background-color: #a9227c; -fx-background-radius: 2em;" text="RESUME" textAlignment="CENTER" textFill="#242424">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>

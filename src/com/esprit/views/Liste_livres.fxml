@@ -14,7 +14,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="C" prefHeight="551.0" prefWidth="766.0" style="-fx-background-color: #020301;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.Liste_livresController">
    <children>
-      <TableView fx:id="TabBook" layoutX="10.0" layoutY="143.0" onMouseClicked="#chargerDonnee" prefHeight="349.0" prefWidth="748.0">
+      <TableView fx:id="TabBook" layoutX="10.0" layoutY="143.0" onMouseClicked="#chargerDonnee" prefHeight="397.0" prefWidth="748.0">
          <columns>
             <TableColumn fx:id="Coltitle" minWidth="1.0" prefWidth="137.0" text="Title" />
             <TableColumn fx:id="ColAuth" minWidth="1.0" prefWidth="137.0" text="Publisher" />

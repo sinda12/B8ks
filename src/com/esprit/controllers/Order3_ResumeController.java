@@ -75,7 +75,7 @@ public class Order3_ResumeController implements Initializable {
             Document document =new Document();
             PdfWriter.getInstance(document, new FileOutputStream("C:\\Users\\sghai\\Downloads/"+namef+".pdf"));
             document.open();
-            document.add(new Paragraph("******************your order has been processed********************** \n \n "+"Your Details are :\n"+so.UserDetails(u_i)+"You payed : "+amount+"dt"));
+            document.add(new Paragraph("*****************************Your order has been processed**************************** \n \n"+"Your Details are :\n\n"+so.UserDetails(u_i)+"\n\n You payed : "+amount+"dt"+"\n\n\n\n\n\n\n\n\n Contact us for any details, or if you want to send us a claim "));
             document.close();
             validationSaisie.notifConfirm("Success", "your facture as been sent !");
             

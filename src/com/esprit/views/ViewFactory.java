@@ -125,10 +125,13 @@ public void closeStage(Stage stageToClose) {
 //        initializeStage(b);
 //    }
 //
-//    public void ListClaims(){
-//        BaseController b = new ShowClaimsController(this,"ShowClaims.fxml");
-//        initializeStage(b);
-//    }
+    public Pane ListClaims(ActionEvent ac) throws IOException{
+
+        BaseController b = new ClaimController(this,"ShowClaims.fxml");
+        fxmlLoader = new FXMLLoader(getClass().getResource(b.getFxmlName()));
+        fxmlLoader.setController(b);
+        return  fxmlLoader.load();
+   }
 //
 //    public void ShowUpdateClaim(){
 //        BaseController b = new UpdateClaimController(this,"UpdateClaim.fxml");
@@ -140,10 +143,13 @@ public void closeStage(Stage stageToClose) {
 //        initializeStage(b);
 //    }
 //
-//    public void SendEmail(){
-//        BaseController b =new FXMLDocumentController(this,"FXMLDocument.fxml");
-//        initializeStage(b);
-//    }
+ public Pane SendEmail(ActionEvent ac) throws IOException{
+        BaseController b = new ClaimController(this,"FXMLDocument.fxml");
+        fxmlLoader = new FXMLLoader(getClass().getResource(b.getFxmlName()));
+        fxmlLoader.setController(b);
+        return  fxmlLoader.load();
+
+   }
 //
 //    public void showUsedBooksView()
 //    {

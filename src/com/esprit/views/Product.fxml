@@ -5,14 +5,12 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="1062.0" stylesheets="@Style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.esprit.views.ProductController">
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="1062.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.ProductController">
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="596.0" prefWidth="155.0" style="-fx-background-color: #640032;">
          <children>
-            <Button mnemonicParsing="false" onAction="#addBook" prefHeight="50.0" prefWidth="155.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="155.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="155.0" text="Button" />
+            <Button mnemonicParsing="false" onAction="#addBook" prefHeight="50.0" prefWidth="155.0" text="Book" />
+            <Button mnemonicParsing="false" onAction="#category" prefHeight="50.0" prefWidth="155.0" text="Category" />
          </children>
       </VBox>
       <BorderPane fx:id="paneHamza" layoutX="165.0" layoutY="14.0" prefHeight="582.0" prefWidth="896.0" />

@@ -5,61 +5,68 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="C" prefHeight="551.0" prefWidth="766.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.Order1Controller">
+<AnchorPane id="AnchorPane" fx:id="C" prefHeight="551.0" prefWidth="766.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.Order1Controller">
    <children>
-      <AnchorPane layoutX="15.0" prefHeight="551.0" prefWidth="766.0">
+      <AnchorPane layoutX="15.0" prefHeight="551.0" prefWidth="766.0" stylesheets="@Style.css">
          <children>
             <Label layoutX="67.0" layoutY="115.0" text="YOUR DETAILS :" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-            <Label fx:id="affiche_adresse_livraison" layoutX="65.0" layoutY="143.0" prefHeight="66.0" prefWidth="379.0" text="affiche_adresse" textFill="#436f74" />
+            <Label fx:id="affiche_adresse_livraison" layoutX="65.0" layoutY="143.0" prefHeight="66.0" prefWidth="379.0" text="affiche_adresse" textFill="#f0e4ed" />
             <Label layoutX="65.0" layoutY="243.0" text="CHOOSE A DELIVERY METHODE :" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
             <AnchorPane fx:id="affiche_info_livraison" layoutY="252.0" prefHeight="146.0" prefWidth="554.0">
                <children>
-                  <Label layoutX="67.0" layoutY="45.0" opacity="0.63" prefWidth="102.0" text="entre 3 jours et 6 jours " textFill="WHITE">
+                  <Label layoutX="67.0" layoutY="45.0" opacity="0.63" prefHeight="15.0" prefWidth="127.0" text="between 3 and 6 days " textFill="WHITE">
                      <font>
                         <Font size="10.0" />
                      </font>
                   </Label>
-                  <Label layoutX="67.0" layoutY="100.0" opacity="0.63" text="entre 1 jours et 3 jours" textFill="WHITE">
+                  <Label layoutX="67.0" layoutY="100.0" opacity="0.63" prefHeight="15.0" prefWidth="127.0" text="between 1 and 3 days " textFill="WHITE">
                      <font>
                         <Font size="10.0" />
                      </font>
                   </Label>
-                  <RadioButton fx:id="Standard" layoutX="40.0" layoutY="27.0" mnemonicParsing="false" onAction="#standardAction" text="Livraison standard" textFill="WHITE">
+                  <RadioButton fx:id="Standard" layoutX="40.0" layoutY="27.0" mnemonicParsing="false" onAction="#standardAction" text="Standard delivery" textFill="WHITE">
                      <toggleGroup>
                         <ToggleGroup fx:id="livraison" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="rapide" layoutX="40.0" layoutY="82.0" mnemonicParsing="false" onAction="#rapideAction" text="Livraison rapide" textFill="WHITE" toggleGroup="$livraison" />
-                  <Label layoutX="66.0" layoutY="65.0" opacity="0.63" prefWidth="102.0" text="frais : 7dt " textFill="WHITE">
+                  <RadioButton fx:id="rapide" layoutX="40.0" layoutY="82.0" mnemonicParsing="false" onAction="#rapideAction" text="Fast delivery" textFill="WHITE" toggleGroup="$livraison" />
+                  <Label layoutX="66.0" layoutY="65.0" opacity="0.63" prefWidth="102.0" text="cost : 7dt " textFill="WHITE">
                      <font>
                         <Font size="10.0" />
                      </font>
                   </Label>
-                  <Label layoutX="66.0" layoutY="115.0" opacity="0.63" prefWidth="102.0" text="frais : 12dt " textFill="WHITE">
+                  <Label layoutX="66.0" layoutY="115.0" opacity="0.63" prefWidth="102.0" text="cost : 12dt " textFill="WHITE">
                      <font>
                         <Font size="10.0" />
                      </font>
                   </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="390.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../photos/giphy%20(4).gif" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
             <AnchorPane layoutX="228.0" layoutY="336.0" prefHeight="190.0" prefWidth="514.0">
                <children>
-                  <Label layoutX="28.0" layoutY="36.0" text="Sous-total" textFill="#848484">
+                  <Label layoutX="28.0" layoutY="36.0" text="Books price" textFill="#848484">
                      <font>
                         <Font name="System Bold" size="11.0" />
                      </font>
                   </Label>
-                  <Label layoutX="28.0" layoutY="54.0" text="Frais de livraison" textFill="#848484">
+                  <Label layoutX="28.0" layoutY="54.0" text="Shipping cost" textFill="#848484">
                      <font>
                         <Font name="System Bold" size="11.0" />
                      </font>
@@ -69,36 +76,39 @@
                         <Font name="System Bold" size="11.0" />
                      </font>
                   </Label>
-                  <Line endX="330.4000244140625" layoutX="141.0" layoutY="85.0" startX="-100.0" stroke="#4ce7ff" />
-                  <Label fx:id="sous_total" layoutX="436.0" layoutY="36.0" text="ST" textFill="#6fa292">
+                  <Line endX="330.4000244140625" layoutX="141.0" layoutY="85.0" startX="-100.0" stroke="#ff9eff" />
+                  <Label fx:id="sous_total" layoutX="436.0" layoutY="36.0" text="ST" textFill="#f8cae5">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <Label fx:id="frais_livrison" layoutX="436.0" layoutY="54.0" text="FL" textFill="#6fa292">
+                  <Label fx:id="frais_livrison" layoutX="436.0" layoutY="54.0" text="FL" textFill="#f8cae5">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <Label fx:id="total" layoutX="432.0" layoutY="96.0" text="Total" textFill="#6fa292">
+                  <Label fx:id="total" layoutX="432.0" layoutY="96.0" text="Total" textFill="#f8cae5">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <Button fx:id="paiement" layoutX="44.0" layoutY="133.0" mnemonicParsing="false" onAction="#GoToPayment" style="-fx-background-color: transparent; -fx-border-radius: 100px; -fx-border-color: #007782;" text="proceder au paiement" textFill="WHITE">
+                  <Button fx:id="paiement" layoutX="44.0" layoutY="133.0" mnemonicParsing="false" onAction="#GoToPayment" text="go to payment" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
                </children>
             </AnchorPane>
-            <Button fx:id="update" layoutX="554.0" layoutY="120.0" mnemonicParsing="false" onAction="#UpdateAdress" style="-fx-background-color: transparent; -fx-border-radius: 100px; -fx-border-color: #007782;" text="Modifier votre adresse" textFill="WHITE">
+            <Button fx:id="update" layoutX="554.0" layoutY="120.0" mnemonicParsing="false" onAction="#UpdateAdress" text="Change your adress" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <AnchorPane layoutX="-55.0" layoutY="51.0" prefHeight="66.0" prefWidth="726.0">
+            <AnchorPane layoutX="-29.0" layoutY="29.0" prefHeight="66.0" prefWidth="726.0">
                <children>
-                  <Label fx:id="Livraison_button" alignment="CENTER" layoutX="171.0" layoutY="24.0" prefHeight="18.0" prefWidth="133.0" style="-fx-background-color: #007782; -fx-background-radius: 2em;" text="DELIVERY" />
+                  <Label fx:id="Livraison_button" alignment="CENTER" layoutX="171.0" layoutY="24.0" prefHeight="18.0" prefWidth="133.0" style="-fx-background-color: #640032; -fx-background-radius: 2em;" text="DELIVERY" textFill="#090909">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
                   <Label fx:id="Paiement_Button" alignment="CENTER" layoutX="350.0" layoutY="24.0" opacity="0.95" prefHeight="18.0" prefWidth="104.0" style="-fx-background-color: cornsilk; -fx-background-radius: 2em;" text="PAYEMENT" textOverrun="CENTER_ELLIPSIS">
                      <opaqueInsets>
                         <Insets />

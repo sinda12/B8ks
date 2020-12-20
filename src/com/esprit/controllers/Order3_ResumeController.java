@@ -17,6 +17,7 @@ import com.itextpdf.text.pdf.PdfWriter;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.net.URL;
+import java.util.Random;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -48,6 +49,9 @@ public class Order3_ResumeController implements Initializable {
     private Button confirm_commande;
     @FXML
     private AnchorPane C;
+    
+    
+    private static String namef = "";
 
     /**
      * Initializes the controller class.
@@ -65,10 +69,11 @@ public class Order3_ResumeController implements Initializable {
             Order1Controller oc=new Order1Controller();
             double priceP=oc.getP();
             int amount=(int) priceP;
+            this.namef = randomcode();
    
                  
             Document document =new Document();
-            PdfWriter.getInstance(document, new FileOutputStream("C:\\Users\\sghai\\Downloads/facture.pdf"));
+            PdfWriter.getInstance(document, new FileOutputStream("C:\\Users\\sghai\\Downloads/"+namef+".pdf"));
             document.open();
             document.add(new Paragraph("******************your order has been processed********************** \n \n "+"Your Details are :\n"+so.UserDetails(u_i)+"You payed : "+amount+"dt"));
             document.close();
@@ -82,4 +87,17 @@ public class Order3_ResumeController implements Initializable {
         System.out.println("pdf enregistré");
     
 }
+        public static String randomcode() {
+        int leftLimit = 97; // letter 'a'
+        int rightLimit = 122; // letter 'z'
+        int targetStringLength = 10;
+        Random random = new Random();
+
+        String generatedString = random.ints(leftLimit, rightLimit + 1)
+                .limit(targetStringLength)
+                .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
+                .toString();
+
+        return generatedString;
+    }
 }

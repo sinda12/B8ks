@@ -6,13 +6,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="C" prefHeight="551.0" prefWidth="766.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.Archive_ordersController">
+<AnchorPane id="AnchorPane" fx:id="C" prefHeight="551.0" prefWidth="766.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.Archive_ordersController">
    <children>
-      <Button fx:id="panier" layoutX="101.0" layoutY="75.0" mnemonicParsing="false" onAction="#GoToCart" style="-fx-border-radius: 100px; -fx-border-color: #007782; -fx-background-color: transparent;" text="Back To Cart" textFill="WHITE">
+      <Button fx:id="panier" layoutX="101.0" layoutY="75.0" mnemonicParsing="false" onAction="#GoToCart" style="-fx-border-radius: 100px; -fx-border-color: #640032; -fx-background-color: transparent;" text="Back To Cart" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
-      <TableView fx:id="table" layoutX="167.0" layoutY="212.0" prefHeight="200.0" prefWidth="431.0">
+      <TableView fx:id="table" layoutX="116.0" layoutY="143.0" prefHeight="362.0" prefWidth="558.0">
          <columns>
             <TableColumn fx:id="book" prefWidth="75.0" text="Book" />
             <TableColumn fx:id="price" prefWidth="75.0" text="Price" />

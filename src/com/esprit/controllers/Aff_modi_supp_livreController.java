@@ -135,8 +135,19 @@ public class Aff_modi_supp_livreController implements Initializable {
     }
 
     @FXML
-    private void addBook(ActionEvent event) {
-    try {
+    private void addBook(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("../views/Ajouter_livre.fxml"));
+        Parent parent = loader.load();
+   
+        Scene scene = new Scene(parent);
+        Stage newWindow = new Stage();
+        newWindow.setScene(scene);
+        newWindow.show();
+        
+        
+        
+    /*try {
              //System.exit(0);
              Parent redirection_parent = FXMLLoader.load(getClass().getResource("../views/Ajouter_livre.fxml"));
              Scene redirection_scene = new Scene(redirection_parent);
@@ -146,7 +157,7 @@ public class Aff_modi_supp_livreController implements Initializable {
              app_stage.show();
          } catch (IOException ex) {
              ex.printStackTrace();
-         }
+         }*/
                 
     }
     
@@ -221,12 +232,20 @@ public class Aff_modi_supp_livreController implements Initializable {
         else{
             try {
              //System.exit(0);
-             Parent redirection_parent = FXMLLoader.load(getClass().getResource("../views/Infos_livres.fxml"));
+                     FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("../views/Infos_livres.fxml"));
+        Parent parent = loader.load();
+   
+        Scene scene = new Scene(parent);
+        Stage newWindow = new Stage();
+        newWindow.setScene(scene);
+        newWindow.show();
+             /*Parent redirection_parent = FXMLLoader.load(getClass().getResource("../views/Infos_livres.fxml"));
              Scene redirection_scene = new Scene(redirection_parent);
              Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
              app_stage.setScene(redirection_scene);
              app_stage.setTitle("Ajout Livre");
-             app_stage.show();
+             app_stage.show();*/
          } catch (IOException ex) {
              ex.printStackTrace();
          }

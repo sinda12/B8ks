@@ -82,8 +82,18 @@ public class Aff_modi_supp_catController implements Initializable {
     }
 
     @FXML
-    private void addCat(ActionEvent event) {
-        try {
+    private void addCat(ActionEvent event) throws IOException {
+         FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("../views/Ajouter_cat.fxml"));
+        Parent parent = loader.load();
+   
+        Scene scene = new Scene(parent);
+        Stage newWindow = new Stage();
+        newWindow.setScene(scene);
+        newWindow.show();
+        
+        
+        /*try {
              //System.exit(0);
              Parent redirection_parent = FXMLLoader.load(getClass().getResource("Ajouter_cat.fxml"));
              Scene redirection_scene = new Scene(redirection_parent);
@@ -93,7 +103,7 @@ public class Aff_modi_supp_catController implements Initializable {
              app_stage.show();
          } catch (IOException ex) {
              ex.printStackTrace();
-         }
+         }*/
     }
 
     private void updateCat(ActionEvent event) throws IOException {
@@ -102,12 +112,22 @@ public class Aff_modi_supp_catController implements Initializable {
             JOptionPane.showMessageDialog(null, "Select Row to Update!");
         else{
             try {
-             Parent redirection_parent = FXMLLoader.load(getClass().getResource("ModifierCat.fxml"));
+                      FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("../views/ModifierCat.fxml"));
+        Parent parent = loader.load();
+   
+        Scene scene = new Scene(parent);
+        Stage newWindow = new Stage();
+        newWindow.setScene(scene);
+        newWindow.show();   
+                
+                
+            /* Parent redirection_parent = FXMLLoader.load(getClass().getResource("ModifierCat.fxml"));
              Scene redirection_scene = new Scene(redirection_parent);
              Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
              app_stage.setScene(redirection_scene);
              app_stage.setTitle("Update Category");
-             app_stage.show();
+             app_stage.show();*/
          } catch (IOException ex) {
              ex.printStackTrace();
          }

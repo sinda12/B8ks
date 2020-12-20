@@ -78,7 +78,6 @@
          </font></Label>
       <Button layoutX="684.0" layoutY="445.0" mnemonicParsing="false" onAction="#cancel" text="cancel" />
       <Button layoutX="747.0" layoutY="445.0" mnemonicParsing="false" onAction="#suppreimerUser" text="supprimer" />
-      <Button layoutX="791.0" layoutY="112.0" mnemonicParsing="false" onAction="#orders" text="Orders " />
       <Label layoutX="76.0" layoutY="28.0" text="HELLO ADMIN " textFill="#640032">
          <font>
             <Font name="System Bold" size="21.0" />

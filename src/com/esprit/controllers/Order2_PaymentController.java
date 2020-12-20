@@ -6,6 +6,7 @@ package com.esprit.controllers;/*
 
 
 
+import com.esprit.utils.MailOrder;
 import com.esprit.cache.UserCache;
 import java.io.IOException;
 import java.net.URL;
@@ -20,6 +21,8 @@ import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;
 import com.stripe.model.Token;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -70,7 +73,7 @@ public class Order2_PaymentController extends HomeController implements Initiali
 
 
     @FXML
-    private void Payer(ActionEvent event) throws StripeException, IOException {
+    private void Payer(ActionEvent event) throws StripeException, IOException, Exception {
         try{
             Stripe.apiKey = "sk_test_51HwbgyDgLCHZebRJA2SVWRSljGlqt8Be6uU4xaFn9qW5zqLdfgFmKQULEDPdg8F8zRug1Y2Tn4eO3V7astmfJNMl00BbOPa1iu";
             
@@ -118,7 +121,13 @@ public class Order2_PaymentController extends HomeController implements Initiali
             nb.setText(cs.nbPanier(user_id));
             
             
-            
+          /*                       SendMail sm = new SendMail();
+            try {
+                SendMail.envoiMailOrder(UserCache.email, "Your Order is being processed, you payed :"+ oc.getP() +"dt"+"\n\n thank you "+UserCache.nom);
+            } catch (Exception ex) {
+                Logger.getLogger(Ajouter_livreController.class.getName()).log(Level.SEVERE, null, ex);
+            } */
+            MailOrder.sendMail(UserCache.email, "\n \n You payed :"+ oc.getP() +"dt"+"\n\n thank you "+UserCache.nom);
             
             
         AnchorPane pane=FXMLLoader.load(getClass().getResource("../views/Order3_Resume.fxml"));

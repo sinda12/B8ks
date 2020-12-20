@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="1062.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.Admin_Order_viewController">
    <children>
-      <TableView fx:id="table" layoutX="327.0" layoutY="96.0" onMouseClicked="#GetData" prefHeight="466.0" prefWidth="690.0" style="-fx-background-color: black;">
+      <TableView fx:id="table" layoutX="327.0" layoutY="96.0" onMouseClicked="#GetData" prefHeight="466.0" prefWidth="690.0">
          <columns>
             <TableColumn fx:id="order_id" prefWidth="89.60000610351562" text="order_id" />
             <TableColumn fx:id="cart_id" prefWidth="108.0" text="cart_id" />

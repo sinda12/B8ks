@@ -119,9 +119,9 @@ public class Ajouter_livreController implements Initializable {
 
     @FXML
     private void Annuler(ActionEvent event) {
-    try {
-             //System.exit(0);
-             Parent redirection_parent = FXMLLoader.load(getClass().getResource("Aff_modi_supp_livre.fxml"));
+    //try {
+             System.exit(0);
+             /*Parent redirection_parent = FXMLLoader.load(getClass().getResource("Aff_modi_supp_livre.fxml"));
              Scene redirection_scene = new Scene(redirection_parent);
              Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
              app_stage.setScene(redirection_scene);
@@ -129,7 +129,7 @@ public class Ajouter_livreController implements Initializable {
              app_stage.show();
          } catch (IOException ex) {
              ex.printStackTrace();
-         }
+         }*/
         
     }
     

@@ -27,9 +27,12 @@ import java.util.Random;
 import java.util.ResourceBundle;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.StageStyle;
 
 
 public class LoginController extends BaseController implements Initializable {
+    
+    public static Stage stage = null;
 
     private static String code = "";
 
@@ -86,7 +89,19 @@ ServiceUser su = new ServiceUser();
 
 
             } else if (s != null && s.getAdmin()) {
-                v.showListUser(ac);
+                //v.showListUser(ac);
+        
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("../views/Admin.fxml"));
+        Parent parent = loader.load();
+   
+        Scene scene = new Scene(parent);
+        Stage newWindow = new Stage();
+        newWindow.setScene(scene);
+        newWindow.initStyle(StageStyle.UNDECORATED);
+        newWindow.show(); 
+                
+                
                 cancel();
             } else {
                 idEmail.setText("");

@@ -24,7 +24,7 @@ public class MainProgGUI extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../views/Admin.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../views/Order2_Payment.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         primaryStage.setTitle("Book JDBC JAVAFX");

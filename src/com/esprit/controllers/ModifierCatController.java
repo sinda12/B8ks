@@ -56,7 +56,9 @@ public class ModifierCatController implements Initializable {
 
     @FXML
     private void Annuler(ActionEvent event) {
-    try {
+        
+        System.exit(0);
+    /*try {
              //System.exit(0);
              Parent redirection_parent = FXMLLoader.load(getClass().getResource("Aff_modi_supp_cat.fxml"));
              Scene redirection_scene = new Scene(redirection_parent);
@@ -66,7 +68,7 @@ public class ModifierCatController implements Initializable {
              app_stage.show();
          } catch (IOException ex) {
              ex.printStackTrace();
-         }
+         }*/
                     
     }
     public void setInput (){

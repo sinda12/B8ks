@@ -1,9 +1,9 @@
-# B8ks
+# _B8ks_
 ## Details
-e-commerce : Bookstore 📚  
-using javafx  
+**e-commerce** : Bookstore 📚  
+**using** : javafx  
 
- 💻 developed by :  
+ 💻 **developed by :**  
 - sinda SGHAIER
 - abir HATIRA
 - alaa GALAI

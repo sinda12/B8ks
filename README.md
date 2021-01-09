@@ -1,7 +1,15 @@
 # B8ks
-e-commerce : Bookstore
-#
-using javafx
+e-commerce : Bookstore 📚  
+using javafx  
+
+ 💻 developed by :  
+- sinda SGHAIER
+- abir HATIRA
+- alaa GALAI
+- hamza BOUCHAREB
+- malek KOUISSI
+- aziz BOURGUIBA
+
 # User Interface
 ![](src/com/esprit/photos/1.png)
 ![](src/com/esprit/photos/desc/2.png)
